@@ -1,6 +1,7 @@
 @import './reset';
 @import './responsive';
 @import './variables';
+@import './animations';
 
 h1{
     text-decoration: none;
@@ -9,3 +10,71 @@ h1{
     font-weight: 900;
     font-size: 5rem;
 }
+
+body{
+    height: 1000px;
+}
+
+//----------- LOADER ----------------
+//-----------------------------------
+
+.pre-loader{
+    overflow-y: hidden;
+}
+
+#loader{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: $white;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #loader-svg{
+        width: 22rem;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include sm{
+            width: 17rem;
+        }
+    
+        img{
+            margin-bottom: 20px;
+            width: 17rem;
+
+            @include sm{
+                width: 12rem;
+            }
+        }
+
+        #loader-progress{
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            height: 6px;
+            width: 100%;
+            background-color: $black;
+            border-radius: 3px;
+            animation: loader-progress 1.5s;
+        }
+    }
+}
+
+.loader-opac{
+    animation: opac 2s ease;
+}
+
+//----------- LOADER END ----------------
+//---------------------------------------
