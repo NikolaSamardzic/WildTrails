@@ -1,0 +1,11 @@
+@import './reset';
+@import './responsive';
+@import './variables';
+
+h1{
+    text-decoration: none;
+    color: rgb(128, 31, 31);
+    //font-size: size(size-large);
+    font-weight: 900;
+    font-size: 5rem;
+}
