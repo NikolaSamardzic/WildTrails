@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes loader-decrease {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 @keyframes opac{
     0% {
         opacity: 1;
@@ -17,4 +26,22 @@
       100% {
         opacity: 0;
       }
+}
+
+@keyframes changing-position-entering {
+  0% {
+    right: -120%;
   }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes changing-position-leaving {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -120%;
+  }
+}

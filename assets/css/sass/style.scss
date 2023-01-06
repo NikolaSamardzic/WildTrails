@@ -11,9 +11,38 @@ h1{
     font-size: 5rem;
 }
 
-body{
-    height: 1000px;
+a{
+    text-decoration: none;
 }
+
+ul{
+    list-style: none;
+}
+
+body{
+
+    height: 1500px;
+    background-color: $white;
+}
+
+.wrapper{
+    width: 1300px;
+    margin: 0 auto;
+
+    //background-color: red;
+    //outline: 2px solid red;
+
+    @include xxl{
+        width: 1100px;
+    }
+
+    @include xl{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 
 //----------- LOADER ----------------
 //-----------------------------------
@@ -78,3 +107,209 @@ body{
 
 //----------- LOADER END ----------------
 //---------------------------------------
+
+
+
+//----------- NAVIGATION ----------------
+//---------------------------------------
+
+
+header{
+    background-color: $black;
+    position: sticky;
+    top: 0;
+    height: 2.2rem;
+
+    nav{
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo . nav-ul";
+
+        #nav-logo{
+
+            height: 2rem;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr;
+            grid-area: logo;
+            column-gap: 0;
+            transition: column-gap 0.2s;
+            //outline: 2px solid rgb(57, 255, 84);
+
+            &:hover{
+
+                column-gap: 6px;
+
+              /*  p{
+                    padding-right: 0.4rem;
+                }*/
+            }
+
+            p{
+                align-self: center;
+                //transition: padding-right 1s;
+                color: $white;
+                font-size: size(size-h3);
+                font-weight: 700;
+            }
+
+            img{
+                height: 100%;
+            }
+
+        }
+
+        button{
+            
+                display: none !important;
+                color: $white;
+                grid-area: nav-ul;
+                //width: 60px;
+                background-color: transparent;
+                border: none;
+
+                i{
+                    font-size: size(size-body);
+                }
+    
+                @include md{
+                    display: inline-block !important;
+                }
+            
+        }
+
+
+        ul{
+            grid-area: nav-ul;
+            display: grid;
+            grid-auto-flow: column;
+            gap: 15px;
+
+            @include md{
+                display: none;
+            }
+
+            div{
+                display: none;
+                position: absolute;
+                z-index: 2;
+            }
+
+            li{
+                position: relative;
+                display: grid;
+
+            }
+            
+            a{
+                //outline-: 1px solid gainsboro;
+                padding: 4px 5px;
+                position: relative;
+                z-index: 3;
+                align-self: center;
+                color: $white;
+                font-size: size(size-body);
+
+                &:hover{
+                    //background-color: $gray;
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
+
+.nav-entering{
+    right: 0;
+    animation: changing-position-entering 0.5s;
+}
+
+.nav-leaving{
+    right: -120%;
+    animation: changing-position-leaving 0.5s;
+}
+
+.phone-nav{
+    display: none;
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $black;
+
+    button{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+
+        i{
+            color: $white;
+            font-size: size(size-h2);
+        }
+    }
+
+}
+
+.display-phone-nav{
+    @include md{
+        display: grid;
+        width: 100%;
+
+        align-items: center;
+        justify-items: center;
+
+    }
+}
+
+#phone-nav-js{
+    li{
+
+        margin-bottom: 0.7rem;
+    }
+
+    a{
+        display: block;
+        color: $white;
+        font-size: size(size-h3);
+        padding: 0.2rem 0.4rem;
+        text-align: center;
+    }
+
+    div{
+        display: none;
+    }
+}
+
+.progress-left-to-right{
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    animation: loader-progress 0.5s;
+    height: 4px;
+    background-color: white;
+
+}
+
+.progress-right-to-left{
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    animation: loader-decrease 0.5s;
+    height: 4px;
+    background-color: white;
+
+}
+
+
+
+
+
+//----------- NAVIGATION END ----------------
+//-------------------------------------------
