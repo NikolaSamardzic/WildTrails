@@ -58,8 +58,9 @@ hamburgerNavButtonClose.addEventListener("click",function(){
     phoneNav.classList.remove("nav-entering");
     phoneNav.classList.add("nav-leaving");
 
-    $("body").removeClass("pre-loader");
+
     setTimeout(() => {
+        $("body").removeClass("pre-loader");
         phoneNav.classList.remove("display-phone-nav");
 
     }, 450);
