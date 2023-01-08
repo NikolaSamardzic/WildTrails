@@ -119,6 +119,7 @@ header{
     position: sticky;
     top: 0;
     height: 2.2rem;
+    z-index: 15;
 
     nav{
         height: 100%;
@@ -234,7 +235,7 @@ header{
 .phone-nav{
     display: none;
     position: fixed;
-
+    z-index: 16;
     top: 0;
     bottom: 0;
     right: 0;
@@ -307,9 +308,295 @@ header{
 
 }
 
-
-
-
-
 //----------- NAVIGATION END ----------------
 //-------------------------------------------
+
+
+//----------- HERO ----------------
+//---------------------------------
+
+
+#hero{
+    height: 40rem;
+    overflow: hidden;
+    //background-color: aquamarine;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.6fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+
+
+
+
+    @include md{
+        justify-content: start;
+        grid-template-columns: 0.4fr;
+    }
+
+    @include sm{
+        height: 60rem;
+        grid-template-columns: 1fr;
+    }
+
+    &::before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        content: "";
+        background: url(../images/hero/cover.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3;
+        z-index: -1;
+
+        @include sm{
+            background: none;
+           // background-size: 450%;
+            //background-position: bottom;
+        }
+
+    }
+
+    .pic-container{
+        position: absolute;
+        width: 50%;
+        padding-bottom: 33%;
+        //background-color: rgb(203, 214, 50);
+        z-index: 10;
+
+        @include md{
+            width: 10rem;
+            height: 30rem;
+            padding-bottom: 0;
+            border-radius: 3px;
+
+        }
+
+        @include sm{
+            width: 13.5rem;
+        }
+
+        @include xsm{
+            width: 10rem;
+        }
+    }
+
+    #pic-container-1{
+        bottom: 0;
+        left: 0;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background: url(../images/hero/hiking1.jpg) bottom center;
+        //background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        //background-position: 20%;
+
+        @include md{
+            clip-path: none;
+            left: auto;
+            right: 11rem;
+            bottom:2rem;
+            background: url(../images/hero/hiking-mobile.jpg);
+        }
+
+        @include sm{
+            left: 0;
+            bottom: 0;
+            right: auto;
+            background: url(../images/hero/hiking-mobile2.jpg);
+        }
+
+        @include xsm{
+            background: url(../images/hero/hiking-mobile.jpg);
+        }
+    }
+
+    #pic-container-2{
+        top: 0;
+        right: 0;
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+        background: url(../images/hero/kayaking.jpg) top center;
+        //background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include md{
+            clip-path: none;
+            top:2rem;
+            background: url(../images/hero/kayaking-mobile.jpg);
+        }
+
+        @include sm{
+            top: 0;
+            background: url(../images/hero/kayaking-mobile2.jpg);
+        }
+
+        @include xsm{
+            background: url(../images/hero/kayaking-mobile.jpg);
+        }
+    }
+
+    #hero-middle{
+        //background-color: red;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+
+        
+        #pic-circle-container{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: auto;
+            //grid-template-rows: 1fr;
+            //height: 100%;
+
+            #img-circle{
+                //height: inherit;
+                //background-color: red;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                //clip-path: circle(50% at 50% 50%);
+                position: relative;
+
+                @include sm{
+                    &::before{
+                        position: absolute;
+                        top: -16px;
+                        bottom: -16px;
+                        left: -16px;
+                        right: -16px;
+                        content: "";
+                        background-color: $white;
+                        z-index: 12;
+                        border-radius: 50%;
+                    }
+                }
+
+                img{
+                    position: relative;
+                    z-index: 13;
+                    height: 200px;
+                    border-radius: 50%;
+                    outline: 3px solid black;
+
+
+                    
+                }
+            }
+        }
+
+        #quote-container{
+            display: grid;
+            grid-template-columns: 0.5fr;
+            grid-template-rows: 1fr;
+            justify-content: end;
+
+            @include md{
+                grid-template-columns: 1fr;
+            }
+
+            @include sm{
+                grid-template-columns: 0.5fr;
+            }
+
+            #quote{
+                //background-color: rgb(192, 192, 192);
+                display: grid;
+                justify-content: center;
+                align-items: center;
+
+                i{
+                    font-size: size(size-body);
+                    text-align: center;
+                    align-self: end;
+                }
+
+                #author-name{
+                    text-align: end;
+                    align-self: start;
+                    font-size: size(size-h3);
+                    font-weight: bold;
+
+                    @include md{
+                        text-align: center;
+                    }
+                }
+
+                p{
+                    font-size: size(size-body);
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+        }
+
+        #logo-container{
+            display: grid;
+            grid-template-columns: 0.5fr;
+            grid-template-rows: 1fr;
+            
+            @include md{
+                grid-template-columns: 1fr;
+            }
+
+            @include sm{
+                grid-template-columns: 0.5fr;
+               // justify-items: start;
+            }
+
+            #logo-part{
+                //background-color: beige;
+                display: grid;
+                grid-template-columns: 0.5fr;
+
+                justify-content: center;
+                align-items: center;
+
+
+                @include sm{
+                    grid-template-columns: 1fr;
+                    
+                }
+
+                p{
+                    font-size: size(size-h1);
+                    font-weight: 800;
+
+                    @include md{
+                        text-align: center;
+                    }
+                }
+
+                #uppper{
+                    align-self: end;
+                }
+
+                #lower{
+                    justify-self: end;
+                    align-self: start;
+
+                    @include md{
+                        justify-self: center;
+                    }
+                }
+
+                img{
+                    height: 76px;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}
+
+
+//----------- HERO END ----------------
+//-------------------------------------
