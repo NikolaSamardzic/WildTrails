@@ -5,7 +5,7 @@
 
 h1{
     text-decoration: none;
-    color: rgb(128, 31, 31);
+    color: #d5d6d7;
     //font-size: size(size-large);
     font-weight: 900;
     font-size: 5rem;
@@ -114,6 +114,7 @@ body{
 //---------------------------------------
 
 
+
 header{
     background-color: $black;
     position: sticky;
@@ -216,6 +217,10 @@ header{
                     //background-color: $gray;
                     color: white;
                 }
+
+                &:focus{
+                    color: white;
+                }
             }
         }
 
@@ -231,6 +236,8 @@ header{
     right: -120%;
     animation: changing-position-leaving 0.5s;
 }
+
+
 
 .phone-nav{
     display: none;
@@ -308,6 +315,15 @@ header{
 
 }
 
+.active-link{
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: white;
+}
+
 //----------- NAVIGATION END ----------------
 //-------------------------------------------
 
@@ -327,7 +343,7 @@ header{
     justify-content: center;
 
 
-
+    //margin-bottom: 10rem;
 
     @include md{
         justify-content: start;
@@ -346,10 +362,11 @@ header{
         right: 0px;
         bottom: 0px;
         content: "";
-        background: url(../images/hero/cover.jpg);
-        background-size: cover;
+        background: url(../images/hero/compass.svg);
+        background-position: 100px -100px;
+        background-size: 50%;
         background-repeat: no-repeat;
-        opacity: 0.3;
+        opacity: 0.1;
         z-index: -1;
 
         @include sm{
@@ -600,3 +617,306 @@ header{
 
 //----------- HERO END ----------------
 //-------------------------------------
+
+//----------- ABOUT ----------------
+//----------------------------------
+
+.anim-changing-background-position-right-to-left{
+    animation: changing-background-position-right-to-left 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-right-to-left-img{
+    animation: changing-background-position-right-to-left-img 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-left-to-right{
+    animation: changing-background-position-left-to-right 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-left-to-right-img{
+    animation: changing-background-position-left-to-right-img 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-right-to-left-img-xl{
+    animation: changing-background-position-right-to-left-img-xl 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-left-to-right-img-xl{
+    animation: changing-background-position-left-to-right-img-xl 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-right-to-left-pattern-mobile{
+    animation: changing-background-position-right-to-left-pattern-mobile 0.6s linear;
+    animation-fill-mode: forwards;
+}
+
+.anim-changing-background-position-left-to-right-pattern-mobile{
+    animation: changing-background-position-left-to-right-pattern-mobile 0.6s linear;
+    animation-fill-mode: forwards;
+}
+
+
+#about{
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    overflow: hidden;
+
+    @include xl{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #about-container{
+        width: 100%;
+        height: 30rem;
+        background-color: $gray;
+        position: relative;
+        clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto 0.3fr 0.15fr 0.3fr auto;
+        justify-content: center;
+        grid-template-areas: " . motivation . about .";
+
+
+        @include xl{
+            clip-path: none;
+            //padding-left: 0%;
+            //padding-right: 0%;
+        }
+
+        @include lg{
+            grid-template-columns: 10px 20rem 20rem 10px;
+            grid-template-areas: ".  motivation  about .";
+            justify-content: space-between;
+        }
+
+        @include md{
+           // position: absolute;
+
+            width: 200vw;
+            grid-template-columns: 100vw 100vw;
+            //justify-content: ;
+            grid-template-areas: "  motivation  about ";
+        }
+
+        #backgrount-pattern{
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: url(../images/hero/mountain-pattern.png);
+
+            //background-position: -250px bottom;
+            background-position-y: bottom;
+            background-repeat: repeat-x;
+            background-size: 70%;
+            opacity: 0.5;
+
+            @include md{
+                background-position-x: 0vw;
+            }
+        }
+
+
+        #text-container-1{
+            grid-area: motivation;
+            position: relative;
+            z-index: 3;
+            display: grid;
+            grid-template-rows: 2rem auto 2rem auto 1fr;
+            color: $black;
+
+            grid-template-columns: 1fr;
+            grid-template-areas:    "."
+                                    "mot-text" 
+                                    "." 
+                                    "about-next"
+                                    ".";
+
+            #text-1{
+                grid-area: mot-text;
+                text-align: center;
+
+                font-size: size(size-h3);
+
+                .mot-large{
+                    font-weight: 800;
+                    font-size: size(size-large);
+                }
+            }
+
+            button{
+                position: relative;
+                background-color: $black;
+                color: $white;
+                z-index: 4;
+                font-size: size(size-h3);
+                font-weight: 600;
+                width: fit-content;
+                justify-self: center;
+
+                grid-area: about-next;
+                padding: 0.2rem 0.5rem;
+                border: none;
+                border-radius: 3px;
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                i{
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        #text-container-2{
+            grid-area: about;
+            display: grid;
+            position: relative;
+            z-index: 3;
+            grid-template-rows: 2rem auto 2rem auto 1fr;
+            color: $black;
+            font-size: size(size-body);
+
+            grid-template-columns: 1fr;
+            grid-template-areas:    "."
+                                    "about-text" 
+                                    "." 
+                                    "about-link"
+                                    ".";
+
+            @include md{
+                padding: 0 100px;
+            }
+
+            #text-2{
+                grid-area: about-text;
+
+                h2{
+                    text-align: center;
+                    font-size: size(size-h2);
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    text-align: justify;
+                    margin-bottom: 0.6rem;
+                }
+            }
+
+            #btn-group{
+                grid-area: about-link;
+                position: relative;
+                z-index: 4;
+
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                grid-template-rows: 1fr;
+
+                font-size: size(size-h3);
+                grid-template-areas: "btn . link";
+
+
+                button{
+                    grid-area: btn;
+                    font-size: size(size-h3);
+                    color: $white;
+
+                    background-color: $black;
+                    border-radius: 3px;
+                    padding: 0.2rem 0.5rem;
+                    border: none;
+                    font-weight: 600;
+
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    i{
+                        margin-right: 1rem;
+                    }
+ 
+                }
+
+                a{
+                    grid-area: link;
+                    background-color: $black;
+                    border-radius: 3px;
+                    padding: 0.2rem 0.5rem;
+                    border: none;
+                    color: $white;
+                    font-weight: 600;
+
+                    i{
+                        margin-left: 1rem;
+                    }
+
+                    &:hover{
+                        background-color: black;
+                        color: white;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    #mbiking-img-container{
+        z-index: 5;
+        position: absolute;
+        height: 36rem;
+        width: 40rem;
+        top: 7rem;
+        right: 2rem;
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+        background: url(../images/hero/biker.png);
+        background-size: cover;
+        background-position: -8rem;
+
+        @include xxl{
+            right: 1rem;
+            top: 8rem;
+            height: 34rem;
+            clip-path: polygon(0 0, 81% 0, 100% 100%, 19% 100%);
+        }
+
+        @include xl{
+            clip-path: none;
+            right: 10px;
+            height: 34rem;
+            width: 30rem;
+            background-position: -13rem;
+        }
+
+        @include lg-940{
+            width: 22rem;
+            //right: unset;
+        }
+
+        @include md{
+            display: none;
+        }
+    }
+
+}
+
+//----------- ABOUT END ----------------
+//--------------------------------------

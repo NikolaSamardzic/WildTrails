@@ -45,3 +45,77 @@
     right: -120%;
   }
 }
+
+@keyframes changing-background-position-right-to-left {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100px;
+  }
+}
+
+@keyframes changing-background-position-right-to-left-img {
+  0% {
+    background-position-x: -8rem;
+  }
+  100% {
+    background-position-x: -1rem;
+  }
+}
+
+
+@keyframes changing-background-position-left-to-right {
+  0% {
+    background-position-x: 100px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes changing-background-position-left-to-right-img {
+  0% {
+    background-position-x: -1rem;
+  }
+  100% {
+    background-position-x: -8rem;
+  }
+}
+
+@keyframes changing-background-position-left-to-right-img-xl {
+  0% {
+    background-position-x: -5rem;
+  }
+  100% {
+    background-position-x: -13rem;
+  }
+}
+
+@keyframes changing-background-position-right-to-left-img-xl {
+  0% {
+    background-position-x: -13rem;
+  }
+  100% {
+    background-position-x: -5rem;
+  }
+}
+
+@keyframes changing-background-position-left-to-right-pattern-mobile {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: -130vw;
+  }
+}
+
+@keyframes changing-background-position-right-to-left-pattern-mobile {
+  0% {
+    background-position-x: -130vw;
+  }
+  100% {
+    background-position-x: -0vw;
+  }
+}
+

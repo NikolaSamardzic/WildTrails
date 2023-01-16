@@ -16,6 +16,12 @@
     }
 }
 
+@mixin lg-940{
+    @media(max-width: 940px){
+        @content;
+    }
+}
+
 @mixin md{
     @media(max-width: 768px){
         @content;
