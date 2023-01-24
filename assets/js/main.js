@@ -354,7 +354,7 @@
         //------ INDEX.HTML ---------
         //---------------------------
 
-        if(url=='/index.html'){    
+        if(url=='index.html'){    
 
             console.log("GITHUB GITHIB");
 
