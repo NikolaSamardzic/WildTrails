@@ -334,9 +334,12 @@
             let fileName = elementHref.split("/").pop();
 
             console.log('file name je ' + fileName);
-            if(`/${fileName}` == url){
+            if(fileName == url.split("/").pop()){
+                console.log("radi radi");
                 continue;
             }
+
+            console.log('prosao je apdejt');
 
             mainNavATags[i].addEventListener("mouseout", function(){
             mainNavDivTags[i].classList.remove("progress-left-to-right");
