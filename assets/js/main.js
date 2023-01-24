@@ -332,9 +332,10 @@
 
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
-
+            console.log(elementHref);
             console.log('file name je ' + fileName);
             if(fileName == url.split("/").pop()){
+
                 console.log("radi radi");
                 continue;
             }
