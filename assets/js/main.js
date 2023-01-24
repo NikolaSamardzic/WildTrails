@@ -331,7 +331,6 @@
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
 
-            //console.log(fileName);
             if(`/${fileName}` == url){
                 continue;
             }
@@ -675,9 +674,9 @@
                 p.css("display", "block");
                 h1.css("display", "block");
                 if(browserWidth>768){
-                    $("#activities-background").css("background-image","url(../assets/images/activities/hiking.jpg)");
+                    $("#activities-background").css("background-image","url(assets/images/activities/hiking.jpg)");
                 }else{
-                    $("#activities").css("background-image","url(../assets/images/activities/hiking.jpg)");
+                    $("#activities").css("background-image","url(assets/images/activities/hiking.jpg)");
                 }
         
             }
