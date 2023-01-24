@@ -312,11 +312,11 @@
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
 
-            if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
-            if(fileName == url.split("/").pop()){
-                
-                mainNavATags[i].style.color = "white";
-                mainNavDivTags[i].classList.add("active-link");
+            if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html'){
+
+            }else if(fileName == url.split("/").pop()){
+
+                console.log("radi radi");
                 continue;
             }
 
@@ -335,8 +335,9 @@
             console.log(elementHref);
             console.log('file name je ' + fileName);
 
-            if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
-            if(fileName == url.split("/").pop()){
+            if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html'){
+
+            }else if(fileName == url.split("/").pop()){
 
                 console.log("radi radi");
                 continue;
