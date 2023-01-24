@@ -1,267 +1,267 @@
-window.onload=function(){
-    var prefixOnline = '/WildTrails/';
-    var prefixsPage = 'pages/';
 
-    var browserWidth = window.innerWidth;
+var prefixOnline = '/WildTrails/';
+var prefixsPage = 'pages/';
 
-    let url = window.location.pathname;
-    console.log(url);
+var browserWidth = window.innerWidth;
 
-
-    const arraySchool = ["Documentation","RSS","Sitemap"];
-
-    const arraySocialMedia = ["Facebook","Instagram","Twitter"];
-    const arraySocialMediaLinks = ["https://www.facebook.com/","https://www.instagram.com/","https://twitter.com/"];
-    const arraySocialMediaIcons = ['<i class="fa-brands fa-facebook-f"></i>','<i class="fa-brands fa-instagram"></i>','<i class="fa-brands fa-twitter"></i>'];
-
-    const arrayNavigation = ["Home","About","Gallery","Author"];
-
-    const arrayNavigationLinks = [`${prefixOnline}index.html`,`https://nikolasamardzic.github.io/WildTrails/pages/about.html`,`https://nikolasamardzic.github.io/WildTrails/pages/gallery.html`,`https://nikolasamardzic.github.io/portfolio/index.html`];
-
-    const arraySecondNavigation = ["s","About","Gallery","Author"];
-
-    europeanCountries = {
-        "countries":[
-            {
-                "name": "BGR",
-                "code": "+359",
-                "number_length": 9
-            },
-            {
-                "name": "CHE",
-                "code": "+41",
-                "number_length": 9
-            },
-            {
-                "name": "DEU",
-                "code": "+49",
-                "number_length": 11
-            },
-            {
-                "name": "ESP",
-                "code": "+34",
-                "number_length": 9
-            },
-            {
-                "name": "FRA",
-                "code": "+33",
-                "number_length": 9
-            },
-            {
-                "name": "GRC",
-                "code": "+30",
-                "number_length": 10
-            },
-            {
-                "name": "ITA",
-                "code": "+39",
-                "number_length": 10
-            },
-            {
-                "name": "NOR",
-                "code": "+47",
-                "number_length": 8
-            },
-            {
-                "name": "SRB",
-                "code": "+381",
-                "number_length": 9
-            },
-            {
-                "name": "SWE",
-                "code": "+46",
-                "number_length": 7
-            }
-        ]
-    }
+let url = window.location.pathname;
+console.log(url);
 
 
-    activityContent = {
-        "activities": [
-            {
-                "heading": "HIKING",
-                "url": "hiking.jpg",
-                "text": "Explore the beautiful trails of Europe with our expert guided hiking tours. Whether you're a seasoned hiker or a beginner, our guides will help you discover the best routes and natural wonders of the area. Experience the tranquility of nature and the satisfaction of reaching the summit with our hiking trips, specially tailored to suit your fitness level and preferences."
-            },
-            {
-                "heading": "MOUNTAIN BIKING",
-                "url": "mountain-biking.png",
-                "text": "Join us for an exciting ride through the challenging terrain of Europe on our guided mountain biking tours. Our experienced guides will take you on a thrilling journey through rugged landscapes and picturesque trails. Push your limits and discover a new way of exploring the great outdoors with our mountain biking adventures, suitable for riders of all levels."
-            },
-            {
-                "heading": "KAYAKING",
-                "url": "kayaking.jpg",
-                "text": "Paddle through the tranquil waters of Europe on our guided kayaking trips. Our experienced guides will lead you through hidden coves and secluded beaches, providing a unique perspective of the area's natural beauty. Take in the fresh air and the peaceful surroundings as you glide through the water on our kayaking excursions, suitable for both first-time paddlers and experienced kayakers."
-            }
-        ]
-    }
+const arraySchool = ["Documentation","RSS","Sitemap"];
 
+const arraySocialMedia = ["Facebook","Instagram","Twitter"];
+const arraySocialMediaLinks = ["https://www.facebook.com/","https://www.instagram.com/","https://twitter.com/"];
+const arraySocialMediaIcons = ['<i class="fa-brands fa-facebook-f"></i>','<i class="fa-brands fa-instagram"></i>','<i class="fa-brands fa-twitter"></i>'];
 
-    secondNavContent = {
-        "menuItems": [
+const arrayNavigation = ["Home","About","Gallery","Author"];
+
+const arrayNavigationLinks = [`${prefixOnline}index.html`,`https://nikolasamardzic.github.io/WildTrails/pages/about.html`,`https://nikolasamardzic.github.io/WildTrails/pages/gallery.html`,`https://nikolasamardzic.github.io/portfolio/index.html`];
+
+const arraySecondNavigation = ["s","About","Gallery","Author"];
+
+europeanCountries = {
+    "countries":[
         {
-            "name": "Wilderness Calling",
-            "description": "Answer the call",
-            "url": "index.html#hero"
+            "name": "BGR",
+            "code": "+359",
+            "number_length": 9
         },
         {
-            "name": "About",
-            "description": "Our Story",
-            "url": "index.html#about"
+            "name": "CHE",
+            "code": "+41",
+            "number_length": 9
         },
         {
-            "name": "Activities",
-            "description": "Adventure Options",
-            "url": "index.html#activities-link"
+            "name": "DEU",
+            "code": "+49",
+            "number_length": 11
         },
         {
-            "name": "Events",
-            "description": "Upcoming Happenings",
-            "url": "index.html#events-link"
+            "name": "ESP",
+            "code": "+34",
+            "number_length": 9
         },
         {
-            "name": "Participation Form",
-            "description": "Participate Now",
-            "url": "index.html#participation-form-part"
+            "name": "FRA",
+            "code": "+33",
+            "number_length": 9
+        },
+        {
+            "name": "GRC",
+            "code": "+30",
+            "number_length": 10
+        },
+        {
+            "name": "ITA",
+            "code": "+39",
+            "number_length": 10
+        },
+        {
+            "name": "NOR",
+            "code": "+47",
+            "number_length": 8
+        },
+        {
+            "name": "SRB",
+            "code": "+381",
+            "number_length": 9
+        },
+        {
+            "name": "SWE",
+            "code": "+46",
+            "number_length": 7
         }
-        ]
-    }
+    ]
+}
 
-    eventContent = 
+
+activityContent = {
+    "activities": [
+        {
+            "heading": "HIKING",
+            "url": "hiking.jpg",
+            "text": "Explore the beautiful trails of Europe with our expert guided hiking tours. Whether you're a seasoned hiker or a beginner, our guides will help you discover the best routes and natural wonders of the area. Experience the tranquility of nature and the satisfaction of reaching the summit with our hiking trips, specially tailored to suit your fitness level and preferences."
+        },
+        {
+            "heading": "MOUNTAIN BIKING",
+            "url": "mountain-biking.png",
+            "text": "Join us for an exciting ride through the challenging terrain of Europe on our guided mountain biking tours. Our experienced guides will take you on a thrilling journey through rugged landscapes and picturesque trails. Push your limits and discover a new way of exploring the great outdoors with our mountain biking adventures, suitable for riders of all levels."
+        },
+        {
+            "heading": "KAYAKING",
+            "url": "kayaking.jpg",
+            "text": "Paddle through the tranquil waters of Europe on our guided kayaking trips. Our experienced guides will lead you through hidden coves and secluded beaches, providing a unique perspective of the area's natural beauty. Take in the fresh air and the peaceful surroundings as you glide through the water on our kayaking excursions, suitable for both first-time paddlers and experienced kayakers."
+        }
+    ]
+}
+
+
+secondNavContent = {
+    "menuItems": [
+      {
+        "name": "Wilderness Calling",
+        "description": "Answer the call",
+        "url": "index.html#hero"
+      },
+      {
+        "name": "About",
+        "description": "Our Story",
+        "url": "index.html#about"
+      },
+      {
+        "name": "Activities",
+        "description": "Adventure Options",
+        "url": "index.html#activities-link"
+      },
+      {
+        "name": "Events",
+        "description": "Upcoming Happenings",
+        "url": "index.html#events-link"
+      },
+      {
+        "name": "Participation Form",
+        "description": "Participate Now",
+        "url": "index.html#participation-form-part"
+      }
+    ]
+}
+
+eventContent = 
+{
+    "activities": [
     {
-        "activities": [
-        {
-        "type": "Hiking",
-        "equipment":["Hiking boots","Backpack","Trekking poles","Water bottles"],
-        "events": [
-        {
-        "img": "couple-hiking-nanos-plateau-slovenia-against-blue-sky.jpg",
-        "date": "15-5-2023",
-        "day": "Sunday",
-        "distance": "20km",
-        "text": "Explore the beautiful mountain trails with a guided hike.",
-        "heading": "Mountain Adventure Hike",
-        "tag": "Peak hiking"
-        },
-        {
-        "img": "full-shot-woman-nature.jpg",
-        "date": "22-6-2023",
-        "day": "Sunday",
-        "distance": "15km",
-        "text": "Take in the stunning views on a sunset hike.",
-        "heading": "Sunset Hike",
-        "tag": "Trail hiking"
-        },
-        {
-        "img": "friends-are-resting-after-they-got-mountain.jpg",
-        "date": "10-7-2023",
-        "day": "Saturday",
-        "distance": "25km",
-        "text": "Join a group for a challenging hike up a nearby peak.",
-        "heading": "Peak Hike Challenge",
-        "tag": "Day hiking"
-        },
-        {
-        "img": "young-female-traveler-enjoying-rural-surroundings.jpg",
-        "date": "17-8-2023",
-        "day": "Saturday",
-        "distance": "10km",
-        "text": "Explore the local hiking trails on a leisurely hike.",
-        "heading": "Local Hike",
-        "tag": "Peak hiking"
-        }
-        ]
-        },
-        {
-        "type": "Mountain biking",
-        "equipment":["Mountain bike","Helmet","Spare tubes","Water bottles"],
-        "events": [
-        {
-        "img": "cyclist-sunny-day-bike-adventure-travel-photo.jpg",
-        "date": "12-5-2023",
-        "day": "Saturday",
-        "distance": "30km",
-        "text": "Join a casual peloton for a spin in the mountains followed by a frothy coffee.",
-        "heading": "Morning Mountain Spin",
-        "tag": "All-mountain"
-        },
-        {
-        "img": "man-mountain-biking-equipment-riding-his-bike.jpg",
-        "date": "19-6-2023",
-        "day": "Sunday",
-        "distance": "40km",
-        "text": "Take on a challenging mountain bike trail with experienced guides.",
-        "heading": "Mountain Bike Challenge",
-        "tag": "Freeride"
-        },
-        {
-        "img": "senior-woman-electric-mountain-bike.jpg",
-        "date": "24-7-2023",
-        "day": "Saturday",
-        "distance": "50km",
-        "text": "Join a group for a scenic bike ride through the countryside.",
-        "heading": "Countryside Bike Ride",
-        "tag": "Cross-country"
-        },
-        {
-        "img": "young-man-riding-bicycle-mountains-early-morning.jpg",
-        "date": "14-8-2023",
-        "day": "Sunday",
-        "distance": "25km",
-        "text": "Experience the thrill of downhill mountain biking with a guided tour.",
-        "heading": "Rural Trail Adventure",
-        "tag": "Downhill"
-        }
-        ]
-        },
-        {
-        "type": "Kayaking",
-        "equipment":["Kayak","Paddle","Life jacket","Dry bags"],
-        "events": [
-        {
-        "img": "woman-canoeing-water-during-daytime.jpg",
-        "date": "21-5-2023",
-        "day": "Saturday",
-        "distance": "15km",
-        "text": "Explore the local waterways on a peaceful kayak trip.",
-        "heading": "Local Kayak Trip",
-        "tag": "Flat water kayaking"
-        },
-        {
-        "img":"couple-together-kayaking-river.jpg",
-        "date": "28-6-2023",
-        "day": "Sunday",
-        "distance": "20km",
-        "text": "Join a guided kayak tour through a nearby river canyon.",
-        "heading": "River Canyon Kayak Tour",
-        "tag": "Recreational kayaking"
-        },
-        {
-        "img": "man-kayaking-inflatable-kayak-lake.jpg",
-        "date": "5-7-2023",
-        "day": "Saturday",
-        "distance": "25km",
-        "text": "Experience the thrill of white water kayaking with an experienced guide.",
-        "heading": "River Kayak Adventure",
-        "tag": "River kayaking"
-        },
-        {
-        "img": "woman-holding-paddle-kayak-river.jpg",
-        "date": "12-8-2023",
-        "day": "Sunday",
-        "distance": "10km",
-        "text": "Join a group for a leisurely kayak trip on a nearby lake.",
-        "heading": "Lake Kayak Trip",
-        "tag": "Canoeing"
-        }
-        ]
-        }
-        ]
+    "type": "Hiking",
+    "equipment":["Hiking boots","Backpack","Trekking poles","Water bottles"],
+    "events": [
+    {
+    "img": "couple-hiking-nanos-plateau-slovenia-against-blue-sky.jpg",
+    "date": "15-5-2023",
+    "day": "Sunday",
+    "distance": "20km",
+    "text": "Explore the beautiful mountain trails with a guided hike.",
+    "heading": "Mountain Adventure Hike",
+    "tag": "Peak hiking"
+    },
+    {
+    "img": "full-shot-woman-nature.jpg",
+    "date": "22-6-2023",
+    "day": "Sunday",
+    "distance": "15km",
+    "text": "Take in the stunning views on a sunset hike.",
+    "heading": "Sunset Hike",
+    "tag": "Trail hiking"
+    },
+    {
+    "img": "friends-are-resting-after-they-got-mountain.jpg",
+    "date": "10-7-2023",
+    "day": "Saturday",
+    "distance": "25km",
+    "text": "Join a group for a challenging hike up a nearby peak.",
+    "heading": "Peak Hike Challenge",
+    "tag": "Day hiking"
+    },
+    {
+    "img": "young-female-traveler-enjoying-rural-surroundings.jpg",
+    "date": "17-8-2023",
+    "day": "Saturday",
+    "distance": "10km",
+    "text": "Explore the local hiking trails on a leisurely hike.",
+    "heading": "Local Hike",
+    "tag": "Peak hiking"
     }
+    ]
+    },
+    {
+    "type": "Mountain biking",
+    "equipment":["Mountain bike","Helmet","Spare tubes","Water bottles"],
+    "events": [
+    {
+    "img": "cyclist-sunny-day-bike-adventure-travel-photo.jpg",
+    "date": "12-5-2023",
+    "day": "Saturday",
+    "distance": "30km",
+    "text": "Join a casual peloton for a spin in the mountains followed by a frothy coffee.",
+    "heading": "Morning Mountain Spin",
+    "tag": "All-mountain"
+    },
+    {
+    "img": "man-mountain-biking-equipment-riding-his-bike.jpg",
+    "date": "19-6-2023",
+    "day": "Sunday",
+    "distance": "40km",
+    "text": "Take on a challenging mountain bike trail with experienced guides.",
+    "heading": "Mountain Bike Challenge",
+    "tag": "Freeride"
+    },
+    {
+    "img": "senior-woman-electric-mountain-bike.jpg",
+    "date": "24-7-2023",
+    "day": "Saturday",
+    "distance": "50km",
+    "text": "Join a group for a scenic bike ride through the countryside.",
+    "heading": "Countryside Bike Ride",
+    "tag": "Cross-country"
+    },
+    {
+    "img": "young-man-riding-bicycle-mountains-early-morning.jpg",
+    "date": "14-8-2023",
+    "day": "Sunday",
+    "distance": "25km",
+    "text": "Experience the thrill of downhill mountain biking with a guided tour.",
+    "heading": "Rural Trail Adventure",
+    "tag": "Downhill"
+    }
+    ]
+    },
+    {
+    "type": "Kayaking",
+    "equipment":["Kayak","Paddle","Life jacket","Dry bags"],
+    "events": [
+    {
+    "img": "woman-canoeing-water-during-daytime.jpg",
+    "date": "21-5-2023",
+    "day": "Saturday",
+    "distance": "15km",
+    "text": "Explore the local waterways on a peaceful kayak trip.",
+    "heading": "Local Kayak Trip",
+    "tag": "Flat water kayaking"
+    },
+    {
+    "img":"couple-together-kayaking-river.jpg",
+    "date": "28-6-2023",
+    "day": "Sunday",
+    "distance": "20km",
+    "text": "Join a guided kayak tour through a nearby river canyon.",
+    "heading": "River Canyon Kayak Tour",
+    "tag": "Recreational kayaking"
+    },
+    {
+    "img": "man-kayaking-inflatable-kayak-lake.jpg",
+    "date": "5-7-2023",
+    "day": "Saturday",
+    "distance": "25km",
+    "text": "Experience the thrill of white water kayaking with an experienced guide.",
+    "heading": "River Kayak Adventure",
+    "tag": "River kayaking"
+    },
+    {
+    "img": "woman-holding-paddle-kayak-river.jpg",
+    "date": "12-8-2023",
+    "day": "Sunday",
+    "distance": "10km",
+    "text": "Join a group for a leisurely kayak trip on a nearby lake.",
+    "heading": "Lake Kayak Trip",
+    "tag": "Canoeing"
+    }
+    ]
+    }
+    ]
+}
 
-    var paginationImg = ["hiking.svg", "hiking-black.svg", "biking.svg", "biking-black.svg", "kayaking.svg", "kayaking-black.svg"];
+var paginationImg = ["hiking.svg", "hiking-black.svg", "biking.svg", "biking-black.svg", "kayaking.svg", "kayaking-black.svg"];
 
-
+window.onload=function(){
 
 
 
@@ -781,6 +781,10 @@ window.onload=function(){
             page.appendChild(img2);
         });
     }
+
+ 
+
+}
 
     function formSetUp(){
         let countryNames = document.getElementById("country");
@@ -1370,9 +1374,5 @@ window.onload=function(){
 
 
     }
-
-}
-
-
 
 
