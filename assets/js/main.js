@@ -326,6 +326,8 @@
             });
         }
         
+        console.log('url je ' + url);
+
         for(let i=0; i<mainNavATags.length;i++){
 
             let elementHref =  mainNavATags[i].getAttribute("href");
