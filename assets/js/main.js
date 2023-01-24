@@ -312,7 +312,7 @@
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
 
-            if(elementHref = 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
+            if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
             if(fileName == url.split("/").pop()){
                 
                 mainNavATags[i].style.color = "white";
