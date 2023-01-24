@@ -314,9 +314,9 @@
             let fileName = elementHref.split("/").pop();
 
             if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html'){
-
+                
             }else if(fileName == url.split("/").pop()){
-
+                mainNavATags[i].classList.add('active-link');
                 console.log("radi radi");
                 continue;
             }
