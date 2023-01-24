@@ -11,8 +11,41 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="pre-loader">
     
+    <div id="loader">
+        <div id="loader-svg">
+            <img src="../assets/images/logo/loader-logo.svg" alt="logo">
+            <div id="loader-progress"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="wrapper">
+            <a id="nav-logo" href="../index.html">
+                <p>Wild</p>
+                <img src="../assets/images/logo/logo1.svg" alt="logo">
+                <p>Trails</p>
+            </a>
+
+            <ul></ul>
+            <button type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+
+    <nav class="phone-nav" >
+        <ul id="phone-nav-js"></ul>
+        <button type="button" id="hamburger-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </nav>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="../assets/js/main.js"></script>
 </body>
