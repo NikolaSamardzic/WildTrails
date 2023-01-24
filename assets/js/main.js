@@ -674,9 +674,9 @@
                 p.css("display", "block");
                 h1.css("display", "block");
                 if(browserWidth>768){
-                    $("#activities-background").css("background-image","url(assets/images/activities/hiking.jpg)");
+                    $("#activities-background").css("background-image","url(../images/activities/hiking.jpg)");
                 }else{
-                    $("#activities").css("background-image","url(assets/images/activities/hiking.jpg)");
+                    $("#activities").css("background-image","url(../images/activities/hiking.jpg)");
                 }
         
             }
@@ -696,9 +696,9 @@
             $("#activities-heading").children('h1:visible').css("display","none");
             $("#activities-heading").children('h1').eq(indexEl2).css("display","block");
             if(browserWidth>768){
-                $("#activities-background").css(`background-image`,`url(../assets/images/activities/${activityContent.activities[indexEl2].url})`);
+                $("#activities-background").css(`background-image`,`url(../images/activities/${activityContent.activities[indexEl2].url})`);
             }else{
-                $("#activities").css(`background-image`,`url(../assets/images/activities/${activityContent.activities[indexEl2].url})`);
+                $("#activities").css(`background-image`,`url(../images/activities/${activityContent.activities[indexEl2].url})`);
             }
             
         }
