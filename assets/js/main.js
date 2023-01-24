@@ -7,6 +7,7 @@
     let url = window.location.pathname;
     console.log(url);
 
+    console.log("apdejt broj 4");
 
     var arraySchool = ["Documentation","RSS","Sitemap"];
 
