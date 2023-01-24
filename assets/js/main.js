@@ -696,9 +696,9 @@
             $("#activities-heading").children('h1:visible').css("display","none");
             $("#activities-heading").children('h1').eq(indexEl2).css("display","block");
             if(browserWidth>768){
-                $("#activities-background").css(`background-image`,`url(../images/activities/${activityContent.activities[indexEl2].url})`);
+                $("#activities-background").css(`background-image`,`url(assets/images/activities/${activityContent.activities[indexEl2].url})`);
             }else{
-                $("#activities").css(`background-image`,`url(../images/activities/${activityContent.activities[indexEl2].url})`);
+                $("#activities").css(`background-image`,`url(assets/images/activities/${activityContent.activities[indexEl2].url})`);
             }
             
         }
@@ -711,9 +711,9 @@
             $("#activities-heading").children('h1:visible').css("display","none");
             $("#activities-heading").children('h1').eq(indexEl2).css("display","block");
             if(browserWidth>768){
-                $("#activities-background").css(`background-image`,`url(../assets/images/activities/${activityContent.activities[indexEl2].url})`);
+                $("#activities-background").css(`background-image`,`url(assets/assets/images/activities/${activityContent.activities[indexEl2].url})`);
             }else{
-                $("#activities").css(`background-image`,`url(../assets/images/activities/${activityContent.activities[indexEl2].url})`);
+                $("#activities").css(`background-image`,`url(assets/assets/images/activities/${activityContent.activities[indexEl2].url})`);
             }
         }
         
