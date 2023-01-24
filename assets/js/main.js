@@ -362,7 +362,7 @@
         //------ INDEX.HTML ---------
         //---------------------------
 
-        if(url=='/WildTrails/'){    
+        if(url=='/WildTrails/index.html'){    
 
             console.log("GITHUB GITHIB");
 
