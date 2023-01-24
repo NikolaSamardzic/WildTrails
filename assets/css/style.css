@@ -255,8 +255,48 @@
   }
 }
 
+@-webkit-keyframes changing-nav-position-hide {
+  0% {
+    top: 2.4rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}
+
+@keyframes changing-nav-position-hide {
+  0% {
+    top: 2.4rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}
+
+@-webkit-keyframes changing-nav-position-show {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: 2.4rem;
+  }
+}
+
+@keyframes changing-nav-position-show {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: 2.4rem;
+  }
+}
+
 :root {
   --line-width: 33%;
+  --var1: "";
+  --var2: "";
+  --var3: "";
+  --var4: "";
 }
 
 h1 {
@@ -264,6 +304,12 @@ h1 {
   color: #d5d6d7;
   font-weight: 900;
   font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
 a {
@@ -381,7 +427,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 2.2rem;
+  height: 2.5rem;
   z-index: 15;
 }
 
@@ -414,9 +460,6 @@ header nav #nav-logo {
 header nav #nav-logo:hover {
   -webkit-column-gap: 6px;
           column-gap: 6px;
-  /*  p{
-                    padding-right: 0.4rem;
-                }*/
 }
 
 header nav #nav-logo p {
@@ -591,6 +634,110 @@ header nav ul a:focus {
   left: 0;
   height: 4px;
   background-color: white;
+}
+
+.changing-nav-position-show {
+  -webkit-animation: changing-nav-position-show 0.5s;
+          animation: changing-nav-position-show 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: fixed !important;
+}
+
+.changing-nav-position-hide {
+  -webkit-animation: changing-nav-position-hide 0.5s;
+          animation: changing-nav-position-hide 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.main-li {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  margin-left: 15px;
+  background-color: #d7d7d7;
+  color: #242424;
+  padding: 3px;
+}
+
+.main-li li {
+  padding: 3px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .main-li li {
+    font-size: 0.7rem !important;
+  }
+}
+
+.main-li :nth-child(2) {
+  display: none;
+  color: #444444;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.active-second-nav :nth-child(1) {
+  background-color: white;
+  color: black;
+}
+
+.active-second-nav a {
+  color: black !important;
+}
+
+#second-nav {
+  background-color: #242424;
+  position: absolute;
+  top: 0rem;
+  height: 2.5rem;
+  width: 100%;
+  z-index: 14;
+  color: #E7E7E7;
+}
+
+#second-nav div {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". menuS";
+  overflow-x: scroll;
+}
+
+#second-nav div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+#second-nav ul {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: menuS;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#second-nav li {
+  border-radius: 3px;
+}
+
+#second-nav li a {
+  color: #242424;
 }
 
 #hero {
@@ -1006,7 +1153,7 @@ header nav ul a:focus {
 #about {
   position: relative;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   overflow: hidden;
 }
 
@@ -1290,6 +1437,7 @@ header nav ul a:focus {
 }
 
 #activities {
+  margin-top: 5rem;
   height: 40rem;
   background-color: #242424;
   position: relative;
@@ -1599,7 +1747,8 @@ header nav ul a:focus {
     display: none;
   }
   #events .secondRow td:nth-child(2) {
-    display: block;
+    display: -ms-grid;
+    display: grid;
   }
   #events .mobileRow:nth-of-type(3) td:nth-child(1), #events .mobileRow:nth-of-type(3) td:nth-child(2) {
     display: none;
@@ -1766,7 +1915,9 @@ header nav ul a:focus {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: eventButton;
-  width: 6rem;
+  width: 4.5rem;
+  height: 2rem;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 768px) {
@@ -1776,7 +1927,851 @@ header nav ul a:focus {
   }
 }
 
-#prazna {
-  height: 40rem;
+#participation-form {
+  height: auto;
+  margin-top: 5rem;
+  background-color: #d7d7d7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 35rem 30rem;
+      grid-template-columns: 35rem 30rem;
+      grid-template-areas: "form-part text-part";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  #participation-form {
+    -ms-grid-columns: 35rem 1fr;
+        grid-template-columns: 35rem 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  #participation-form {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "form-part" "text-part";
+    padding-bottom: 5px;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #participation-form h3 {
+    text-align: center;
+  }
+}
+
+#participation-form #after-form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text-part;
+  padding: 5px;
+}
+
+#participation-form #after-form hr {
+  height: 3px;
+  background-color: #b3b3b3;
+  margin-bottom: 2rem;
+}
+
+#participation-form #after-form h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#participation-form #after-form p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+#participation-form #after-form ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: max-content max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content max-content;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  #participation-form #after-form ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  #participation-form #after-form ul {
+    grid-auto-flow: row;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #participation-form #after-form ul li {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+#participation-form #after-form ul a {
+  padding: 5px 10px;
+  background-color: #E7E7E7;
+  color: #242424;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+#participation-form #after-form ul a i {
+  margin-left: 5px;
+}
+
+#participation-form #after-form ul a:hover {
+  background-color: black;
+  color: white;
+}
+
+#participation-form .error-message {
+  color: red;
+}
+
+#participation-form .correct {
+  outline: 2px solid green !important;
+  outline-offset: -1px;
+}
+
+#participation-form .incorrect {
+  outline: 2px solid red !important;
+  outline-offset: -1px;
+}
+
+#participation-form form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: form-part;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+#participation-form form label {
+  font-weight: 500;
+}
+
+#participation-form form input {
+  font-size: 1.25rem;
+  width: unset;
+}
+
+#participation-form form select {
+  font-size: 1.25rem;
+}
+
+#participation-form form h3 {
+  color: #242424;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+#participation-form form hr {
+  height: 3px;
+  background-color: #b3b3b3;
+  margin-bottom: 2rem;
+}
+
+#participation-form form .experiance-div-error {
+  -ms-grid-rows: auto auto auto !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas: "p-tag p-tag p-tag " "message message message" "radio1 radio2 radio3 " !important;
+}
+
+@media (max-width: 650px) {
+  #participation-form form .experiance-div-error {
+    -ms-grid-rows: auto auto max-content max-content max-content !important;
+        grid-template-rows: auto auto -webkit-max-content -webkit-max-content -webkit-max-content !important;
+        grid-template-rows: auto auto max-content max-content max-content !important;
+        grid-template-areas: "p-tag" "message" "radio1" "radio2" "radio3 " !important;
+  }
+}
+
+#participation-form form #experiance-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+      grid-template-areas: "p-tag p-tag p-tag " "radio1 radio2 radio3 ";
+}
+
+@media (max-width: 650px) {
+  #participation-form form #experiance-div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto max-content max-content max-content;
+        grid-template-rows: auto -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-rows: auto max-content max-content max-content;
+        grid-template-areas: "p-tag" "radio1" "radio2" "radio3 ";
+    margin-bottom: 2rem;
+  }
+  #participation-form form #experiance-div input {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 0.5rem;
+  }
+  #participation-form form #experiance-div p {
+    text-align: center;
+  }
+}
+
+#participation-form form #experiance-div #experiance-p {
+  display: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  font-weight: 400;
+}
+
+#participation-form form #experiance-div p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: p-tag;
+  font-weight: 500;
+}
+
+#participation-form form #experiance-div :nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: radio1;
+}
+
+#participation-form form #experiance-div :nth-child(3)::after {
+  content: "First-timer";
+}
+
+#participation-form form #experiance-div :nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: radio2;
+}
+
+#participation-form form #experiance-div :nth-child(4)::after {
+  content: "Done it before";
+}
+
+#participation-form form #experiance-div :nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: radio3;
+}
+
+#participation-form form #experiance-div :nth-child(5)::after {
+  content: "Regularly participate";
+}
+
+#participation-form form #experiance-div input {
+  width: 11rem;
+  height: 2rem;
+  -webkit-appearance: unset !important;
+     -moz-appearance: unset !important;
+          appearance: unset !important;
+  background-color: white;
+  color: white;
+  position: relative;
+}
+
+#participation-form form #experiance-div input::after {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #242424;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#participation-form form #experiance-div input:hover {
+  cursor: pointer;
+  outline: 2px solid #353535;
+}
+
+#participation-form form #experiance-div input:checked {
+  outline: 4px solid black;
+  outline-offset: -2px;
+}
+
+#participation-form form #div-button {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 11rem auto 11rem;
+      grid-template-columns: 11rem auto 11rem;
+  gap: 0.5rem;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: ". button-submit .";
+}
+
+@media (max-width: 650px) {
+  #participation-form form #div-button {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "button-submit";
+  }
+  #participation-form form #div-button button {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+#participation-form form #div-button button {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: button-submit;
+  font-size: 1.25rem;
+  width: 11rem;
+  height: 2rem;
+  font-weight: 500;
+  background-color: #242424;
+  color: #E7E7E7;
+  border: none;
+  outline: none;
+}
+
+#participation-form form #div-button button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+#participation-form form #equipment-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content min-content;
+      grid-template-columns: -webkit-min-content -webkit-min-content;
+      grid-template-columns: min-content min-content;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  gap: 0.5rem;
+  margin-bottom: 1em;
+      grid-template-areas: "p-tag1 p-tag1 " "p-tag2 p-tag2" "option1 option2 " "option3 option4 ";
+}
+
+@media (max-width: 650px) {
+  #participation-form form #equipment-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #participation-form form #equipment-div p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  #participation-form form #equipment-div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    gap: 0.5rem;
+    margin-bottom: 1em;
+        grid-template-areas: "p-tag1" "p-tag2" "option1" "option2" "option3"  "option4 ";
+  }
+  #participation-form form #equipment-div input {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+#participation-form form #equipment-div :nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: option1;
+}
+
+#participation-form form #equipment-div :nth-child(3)::after {
+  content: var(--var1);
+}
+
+#participation-form form #equipment-div :nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: option2;
+}
+
+#participation-form form #equipment-div :nth-child(4)::after {
+  content: var(--var2);
+}
+
+#participation-form form #equipment-div :nth-child(5) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: option3;
+}
+
+#participation-form form #equipment-div :nth-child(5)::after {
+  content: var(--var3);
+}
+
+#participation-form form #equipment-div :nth-child(6) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: option4;
+}
+
+#participation-form form #equipment-div :nth-child(6)::after {
+  content: var(--var4);
+}
+
+#participation-form form #equipment-div input {
+  position: relative;
+  -webkit-appearance: unset;
+     -moz-appearance: unset;
+          appearance: unset;
+  width: 11rem;
+  height: 2rem;
+  background-color: white;
+}
+
+#participation-form form #equipment-div input::after {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #242424;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#participation-form form #equipment-div input:hover {
+  cursor: pointer;
+  outline: 2px solid #353535;
+}
+
+#participation-form form #equipment-div input:checked {
+  outline: 4px solid black;
+  outline-offset: -2px;
+}
+
+#participation-form form #equipment-div #equipment-p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p-tag1;
+  font-weight: 500;
+}
+
+#participation-form form #equipment-div #additional-text {
+  grid-area: p-tag2;
+  font-size: small;
+  font-weight: 300;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p-tag2;
+  color: #3f3f3f;
+}
+
+#participation-form form .activity-div-error {
+  -ms-grid-rows: auto auto auto !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas: "label1 label2" "message1 message2" "select1 select2" !important;
+}
+
+@media (max-width: 650px) {
+  #participation-form form .activity-div-error {
+    -ms-grid-rows: auto auto auto auto auto auto !important;
+        grid-template-rows: auto auto auto auto auto auto !important;
+        grid-template-areas: "label1"  "message1" "select1" "label2" "message2"  "select2" !important;
+  }
+  #participation-form form .activity-div-error p {
+    text-align: center !important;
+  }
+}
+
+#participation-form form #activity-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+      grid-template-areas: "label1 label2" "select1 select2";
+}
+
+#participation-form form #activity-div #activity-message {
+  display: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: message1;
+}
+
+#participation-form form #activity-div #event-message {
+  display: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: message2;
+}
+
+@media (max-width: 650px) {
+  #participation-form form #activity-div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+        grid-template-areas: "label1"  "select1" "label2"  "select2";
+  }
+  #participation-form form #activity-div label {
+    text-align: center;
+  }
+  #participation-form form #activity-div select {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 11rem;
+  }
+}
+
+#participation-form form #activity-div #activity-select-label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label1;
+}
+
+#participation-form form #activity-div #event-select {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: select2;
+}
+
+#participation-form form #activity-div #event-select-label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: label2;
+}
+
+#participation-form form #activity-div #activity-select {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: select1;
+}
+
+#participation-form form .phone-div-error {
+  -ms-grid-rows: auto auto auto !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas: "label-country label-country ." "message message ." "select-country country-code phone-input" !important;
+}
+
+@media (max-width: 420px) {
+  #participation-form form .phone-div-error {
+    -ms-grid-columns: max-content;
+        grid-template-columns: -webkit-max-content;
+        grid-template-columns: max-content;
+    -ms-grid-rows: auto auto auto auto auto auto !important;
+        grid-template-rows: auto auto auto auto auto auto !important;
+        grid-template-areas: "label-country" "message" "select-country " " country-code" "message2" "phone-input" !important;
+  }
+  #participation-form form .phone-div-error p {
+    text-align: center !important;
+  }
+  #participation-form form .phone-div-error #e-m-number {
+    -ms-grid-row: 2 !important;
+    -ms-grid-column: 2 !important;
+    grid-area: message2 !important;
+  }
+}
+
+#participation-form form #phone-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto 1fr;
+      grid-template-columns: auto auto 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+      grid-template-areas: "label-country label-country ." "select-country country-code phone-input";
+}
+
+#participation-form form #phone-div #e-m-number {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  display: none;
+}
+
+#participation-form form #phone-div #e-m-country {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  display: none;
+}
+
+@media (max-width: 420px) {
+  #participation-form form #phone-div {
+    -ms-grid-columns: max-content;
+        grid-template-columns: -webkit-max-content;
+        grid-template-columns: max-content;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+        grid-template-areas: "label-country" "select-country " " country-code" "phone-input";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #participation-form form #phone-div label {
+    text-align: center;
+  }
+}
+
+#participation-form form #phone-div #country-label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: label-country;
+}
+
+#participation-form form #phone-div #phone-number {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: phone-input;
+  width: 13rem;
+}
+
+#participation-form form #phone-div #number-code {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: country-code;
+  width: 5rem;
+}
+
+#participation-form form #phone-div #country {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: select-country;
+  width: 6rem;
+}
+
+#participation-form form .mail-div-error {
+  -ms-grid-rows: auto auto auto !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas: "label1 ." "message message" "input1 ." !important;
+}
+
+@media (max-width: 420px) {
+  #participation-form form .mail-div-error {
+    -ms-grid-rows: auto auto auto !important;
+        grid-template-rows: auto auto auto !important;
+        grid-template-areas: "label1" "message" "input1" !important;
+  }
+  #participation-form form .mail-div-error p {
+    text-align: center !important;
+  }
+}
+
+#participation-form form #mail-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+      grid-template-areas: "label1 ." "input1 .";
+  margin-bottom: 1em;
+}
+
+#participation-form form #mail-div #mail-p {
+  display: none;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+}
+
+@media (max-width: 420px) {
+  #participation-form form #mail-div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    gap: 0.5rem;
+        grid-template-areas: "label1" "input1";
+  }
+  #participation-form form #mail-div label {
+    text-align: center;
+  }
+}
+
+#participation-form form #mail-div label {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label1;
+}
+
+#participation-form form #mail-div input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: input1;
+}
+
+#participation-form form .name-div-error {
+  -ms-grid-rows: auto auto auto !important;
+      grid-template-rows: auto auto auto !important;
+      grid-template-areas: "label1 label2" "message1 message2" "input1 input2"  !important;
+}
+
+@media (max-width: 650px) {
+  #participation-form form .name-div-error {
+    -ms-grid-rows: auto auto auto auto auto auto !important;
+        grid-template-rows: auto auto auto auto auto auto !important;
+        grid-template-areas: "label1" "message1"  "input1" "label2" "message2" "input2" !important;
+  }
+}
+
+@media (max-width: 420px) {
+  #participation-form form .name-div-error p {
+    text-align: center !important;
+  }
+}
+
+#participation-form form #name-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 0.5rem;
+  margin-bottom: 1em;
+      grid-template-areas: "label1 label2" "input1 input2";
+}
+
+@media (max-width: 650px) {
+  #participation-form form #name-div {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+        grid-template-areas: "label1"  "input1" "label2" "input2";
+  }
+}
+
+@media (max-width: 420px) {
+  #participation-form form #name-div label {
+    text-align: center;
+  }
+}
+
+#participation-form form #name-div #e-m-f-name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: message1;
+  display: none;
+}
+
+#participation-form form #name-div #e-m-l-name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: message2;
+  display: none;
+}
+
+#participation-form form #name-div #input-first-name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: input1;
+}
+
+#participation-form form #name-div #input-last-name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: input2;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: #242424;
+  height: auto;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: max-content max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content max-content;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav li {
+  margin-bottom: 0.5rem;
+}
+
+footer nav a {
+  font-size: 1.25rem;
+  color: #E7E7E7;
+}
+
+footer nav a:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

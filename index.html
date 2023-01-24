@@ -43,6 +43,17 @@
 
     </nav>
 
+    <nav id="second-nav">
+
+        <div class="wrapper">
+            <ul id="secondUl">
+
+            </ul>
+        </div>
+
+
+    </nav>
+
     <section id="hero" class="wrapper">
 
         <div id="hero-middle">
@@ -112,6 +123,8 @@
 
     </section>
 
+    <div id="activities-link"></div>
+
     <section id="activities" class="wrapper">
 
         <div  id="activities-text">
@@ -138,6 +151,7 @@
 
         <div  id="activities-heading"></div>
     </section>
+    <div id="events-link"></div>
 
     <section id="events" class="wrapper">
 
@@ -146,12 +160,100 @@
         <button id="buttonToggleEvents">Show More</button>
     </section>
 
-    <section id="prazna" class="wrapper"></section>
+    <div id="participation-form-part"></div>
 
+
+
+    <section id="participation-form" class="wrapper">
+        <form id="event-form" name="event-form" method="post" action="participation.php" >
+            <h3 >Personal information</h3>
+            <hr/>
+
+            <div id="name-div">
+                <p class="error-message" id="e-m-f-name">Incorrect format (ex. Jhon)</p>
+                <p class="error-message" id="e-m-l-name">Incorrect format (ex. Smith)</p>
+                <label for="input-first-name">First Name</label>
+                <input type="text" id="input-first-name"/>
+                <label for="input-last-name">Last Name</label>
+                <input type="text" id="input-last-name" />
+            </div>
+
+            <div id="mail-div">
+                <p id="mail-p" class="error-message">Incorrect format (ex. jhonsmith@gmail.com)</p>
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" />
+            </div>
+
+            <div id="phone-div">
+                <p id="e-m-number" class="error-message">Complete phone number</p>
+                <p id="e-m-country" class="error-message">Select country</p>
+                <label for="country" id="country-label">Phone Number</label>
+                <select name="country" id="country"></select>
+                <input type="text" disabled id="number-code" readonly="true"/>
+                <input type="text" disabled id="phone-number"/>
+            </div>
+
+            <h3>Event information</h3>
+            <hr/>
+
+            <div id="activity-div">
+                <p id="activity-message" class="error-message">Choose activity</p>
+                <p id="event-message" class="error-message">Choose event</p>
+                <label for="activity-select" id="activity-select-label">Activity</label>
+                <select name="activity-select" id="activity-select"></select>
+                <label for="event-select" id="event-select-label">Event</label>
+                <select name="event-select"  disabled id="event-select"></select>
+            </div>
+
+            <div id="experiance-div">
+                <p>Your Experiance</p>
+                <p id="experiance-p" class="error-message">Select one option</p>
+                <input type="radio" name="experiance-radio" placeholder="First-timer"/>
+                <input type="radio" name="experiance-radio" placeholder="Done it before"/>
+                <input type="radio" name="experiance-radio" placeholder="Regularly participate"/>
+            </div>
+
+            <div id="equipment-div">
+                <p id="equipment-p">Your Equipment</p>
+                <p id="additional-text">Don't have an equipment? No worries! We will provide all necessary equipment for the event.</p>
+                <input type="checkbox" disabled value="0" name="equipment-cb">
+                <input type="checkbox" disabled value="1" name="equipment-cb">
+                <input type="checkbox" disabled value="2" name="equipment-cb">
+                <input type="checkbox" disabled value="3" name="equipment-cb">
+
+            </div>
+
+            <div id="div-button">
+                <button type="button" id="form-button">Submit</button>
+            </div>
+        </form>
+
+        <div id="after-form">
+            <h3>Your Next Steps With Us</h3>
+            <hr />
+            <p id="first-p-form">Once you submit the form, you will receive an email confirmation with all the details for the event, including location, schedule, and what to bring. If you have any questions, please feel free to contact us.</p>
+            <p>For further questions, please contact us or check our social media accounts on Facebook, Instagram and Twitter for updates and more information.</p>
+
+            <ul id="form-social-media"></ul>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <nav class="wrapper">
+            <ul id="school-links"></ul>
+            <ul id="social-links"></ul>
+            <ul id="navigation-links"></ul>
+        </nav>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/simplepagination.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     
+
+
 
 </body>
 </html>

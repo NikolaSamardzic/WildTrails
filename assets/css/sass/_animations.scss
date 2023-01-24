@@ -119,3 +119,20 @@
   }
 }
 
+@keyframes changing-nav-position-hide {
+  0% {
+    top: 2.4rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}
+
+@keyframes changing-nav-position-show {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: 2.4rem;
+  }
+}
