@@ -312,7 +312,7 @@
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
 
-            console.log(fileName);
+            //le.log(fileName);
             if(`/${fileName}` == url){
                 
                 mainNavATags[i].style.color = "white";
@@ -331,7 +331,7 @@
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
 
-            console.log(fileName);
+            //console.log(fileName);
             if(`/${fileName}` == url){
                 continue;
             }
@@ -354,7 +354,7 @@
         //------ INDEX.HTML ---------
         //---------------------------
 
-        if(url=='index.html'){    
+        if(url=='/WildTrails/'){    
 
             console.log("GITHUB GITHIB");
 
