@@ -334,13 +334,15 @@
             let fileName = elementHref.split("/").pop();
             console.log(elementHref);
             console.log('file name je ' + fileName);
+
+            if(elementHref = 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
             if(fileName == url.split("/").pop()){
 
                 console.log("radi radi");
                 continue;
             }
 
-            console.log('prosao je apdejt');
+            console.log('prosao je apdejt2111');
 
             mainNavATags[i].addEventListener("mouseout", function(){
             mainNavDivTags[i].classList.remove("progress-left-to-right");
