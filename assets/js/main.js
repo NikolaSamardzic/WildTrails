@@ -16,7 +16,7 @@ const arraySocialMediaIcons = ['<i class="fa-brands fa-facebook-f"></i>','<i cla
 
 const arrayNavigation = ["Home","About","Gallery","Author"];
 
-const arrayNavigationLinks = [`${prefixOnline}index.html`,`${prefixsPage+prefixOnline}about.html`,`${prefixsPage+prefixOnline}gallery.html`,`https://nikolasamardzic.github.io/portfolio/index.html`];
+const arrayNavigationLinks = [`${prefixOnline}index.html`,`https://nikolasamardzic.github.io/WildTrails/pages/about.html`,`https://nikolasamardzic.github.io/WildTrails/pages/gallery.html`,`https://nikolasamardzic.github.io/portfolio/index.html`];
 
 const arraySecondNavigation = ["s","About","Gallery","Author"];
 
