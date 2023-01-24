@@ -312,8 +312,8 @@
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
 
-            //le.log(fileName);
-            if(`/${fileName}` == url){
+            if(elementHref = 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
+            if(fileName == url.split("/").pop()){
                 
                 mainNavATags[i].style.color = "white";
                 mainNavDivTags[i].classList.add("active-link");
