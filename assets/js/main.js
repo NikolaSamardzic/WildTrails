@@ -335,7 +335,7 @@
             console.log(elementHref);
             console.log('file name je ' + fileName);
 
-            if(elementHref = 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
+            if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html') continue;
             if(fileName == url.split("/").pop()){
 
                 console.log("radi radi");
