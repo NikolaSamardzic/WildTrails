@@ -260,7 +260,7 @@
 
     var paginationImg = ["hiking.svg", "hiking-black.svg", "biking.svg", "biking-black.svg", "kayaking.svg", "kayaking-black.svg"];
 
- //   window.onload=function(){
+    window.onload=function(){
 
 
 
@@ -305,8 +305,6 @@
             }, 450);
 
         })
-
-        console.log("duzina " + mainNavATags.length);
 
 
         for(let i=0; i<mainNavATags.length;i++){
@@ -357,6 +355,8 @@
         //---------------------------
 
         if(url=='/index.html'){    
+
+            console.log("GITHUB GITHIB");
 
             let positionTextAbout1;
             let positionTextAbout2;
@@ -690,7 +690,7 @@
         
         function activitySliderPrevious(){
             let indexEl2 = $("#text-container-3").children('p:visible').prev().index();
-            console.log(indexEl2);
+
             if(indexEl2 == -1)indexEl2=2;
             $("#text-container-3").children('p:visible').css("display","none");
             $("#text-container-3").children('p').eq(indexEl2).css("display","block");
@@ -783,7 +783,7 @@
 
     
 
-   // }
+    }
 
     function formSetUp(){
         let countryNames = document.getElementById("country");
@@ -883,7 +883,7 @@
         }
 
 
-        console.log('broj gresaka '+ errorNumber);
+   
 
 
         if(!errorNumber){
@@ -954,13 +954,13 @@
             activityMessage.style.display = "none";
             activityDiv.classList.remove('activity-div-error');
 
-            console.log("radi");
+
             return 0;
         }else{
             eventMessage.style.display = "none";
             activityMessage.style.display = "block";
             activityDiv.classList.add('activity-div-error');
-            console.log(" ne radi");
+
             return 1;
         }
     }
@@ -1145,7 +1145,7 @@
 
             eventSelect.focus();
 
-            console.log(eventContent.activities[activityTypeSelect.selectedIndex-1].equipment[0]);
+
             document.documentElement.style.setProperty('--var1', `"${eventContent.activities[activityTypeSelect.selectedIndex-1].equipment[0]}"`);
             document.documentElement.style.setProperty('--var2', `"${eventContent.activities[activityTypeSelect.selectedIndex-1].equipment[1]}"`);
             document.documentElement.style.setProperty('--var3', `"${eventContent.activities[activityTypeSelect.selectedIndex-1].equipment[2]}"`);
@@ -1249,18 +1249,18 @@
 
         let activities = eventContent.activities;
 
-        //console.log(activities[1].events);
+
 
 
         for(let i=0;i<3;i++){
             let events = activities[i].events;
-            //console.log(events);
+
             for(let j=0;j<4;j++){
             let tds = trs[trIndex++].querySelectorAll("td");
-        // console.log(tds);
+
                 
                 for(let k=0;k<4;k++){
-                    //console.log(tds[k]);
+   
 
                     let heading = document.createElement("h1");
                     heading.innerText = events[k].heading;
@@ -1300,9 +1300,9 @@
                     button.innerText = "Join";
                     tds[k].appendChild(button);
                 }
-                //console.log("-");
+
             }
-        // console.log(" ");
+
         }
 
 
@@ -1315,7 +1315,6 @@
 
         //menuUl.innerHTML = "dsa";
 
-        console.log(menuItems);
         
         for(let i=0;i<menuItems.length;i++){
             let mainLi = document.createElement('li');
@@ -1341,7 +1340,6 @@
     }
 
     function setActiveSecondNav(liContainer){
-        //console.log(liContainer);
 
 
         if (!liContainer.classList.contains('active-second-nav')) {
@@ -1355,8 +1353,7 @@
                 let secondChild = activeSecondNav.children[1];
 
 
-                console.log(" ");
-                console.log(secondChild);
+
 
                 //secondChild.style.removeProperty('display');
 
