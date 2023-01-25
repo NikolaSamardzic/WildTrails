@@ -2850,7 +2850,7 @@ header nav ul a:focus {
 }
 
 #location {
-  height: 30rem;
+  height: auto;
   margin-top: 3rem;
   background-color: blue;
   display: -ms-grid;
