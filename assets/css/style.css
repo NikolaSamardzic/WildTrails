@@ -2861,6 +2861,9 @@ header nav ul a:focus {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
       grid-template-areas: "heading" "locations";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #location #text-container-location {

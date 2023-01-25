@@ -2249,6 +2249,8 @@ header{
     grid-template-areas:    "heading"
                             "locations";
 
+    justify-content: center;
+
     #text-container-location{
         grid-area: heading;
 
