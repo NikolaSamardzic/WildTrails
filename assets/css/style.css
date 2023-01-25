@@ -3012,6 +3012,16 @@ header nav ul a:focus {
   }
 }
 
+#gallery-body #img-container img:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.549457);
+}
+
 #gallery-body #img-container img {
   width: 250px;
   border-radius: 3px;
@@ -3022,16 +3032,6 @@ header nav ul a:focus {
 
 #gallery-body #img-container img:hover {
   cursor: pointer;
-}
-
-#gallery-body #img-container img:hover::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.549457);
 }
 
 #pic-slider {
