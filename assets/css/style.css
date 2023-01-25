@@ -2978,6 +2978,15 @@ header nav ul a:focus {
   gap: 4rem;
 }
 
+@media (max-width: 1400px) {
+  #gallery-body #img-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+  }
+}
+
 #gallery-body #img-container img {
   width: 250px;
   border-radius: 3px;
