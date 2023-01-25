@@ -2929,6 +2929,7 @@ header nav ul a:focus {
       grid-template-rows: auto auto;
   -ms-grid-columns: 15rem 15rem;
       grid-template-columns: 15rem 15rem;
+  gap: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
