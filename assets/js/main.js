@@ -755,7 +755,7 @@
             
         });
 
-
+            visibleImg.style.opacity = "1";
            console.log("ne radi kako treba 55555");
         }
 
