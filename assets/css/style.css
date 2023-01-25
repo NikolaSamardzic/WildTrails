@@ -3003,6 +3003,10 @@ header nav ul a:focus {
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#gallery-body #img-container img:hover {
+  cursor: pointer;
+}
+
 #pic-slider {
   display: none;
 }
