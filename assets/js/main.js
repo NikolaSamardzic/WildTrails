@@ -5,9 +5,7 @@
     var browserWidth = window.innerWidth;
 
     let url = window.location.pathname;
-    console.log(url);
 
-    console.log("apdejt broj 4");
 
     var galleryArray = ['couple-together-kayaking-river','couple-together-kayaking','cyclist-sunny-day-bike-adventure-travel-photo','friends-are-resting-after-they-got-mountain','hiker-looking-river','hikers-top','long-shot-man-mountain-biking-equipment','man-mountain-biking-equipment-outdoors','man-riding-mountain-bike-special-equipment-with-copy-space','silhouette-teamwork-helping-hand','smiling-young-man-paddling-kayak-with-his-friend-lake','woman-holding-paddle-kayak-river'];
 
@@ -344,11 +342,9 @@
             if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html'){
                 
             }else if(fileName == url.split("/").pop()){
-                //mainNavATags[i].classList.add('active-link');
-                console.log("ovo vrati "+ mainNavATags[i]);
-                //mainNavATags[i].children[1].classList.add('active-link');
+
                 mainNavDivTags[i].classList.add("active-link");
-                console.log("radi radi");
+
                 continue;
             }
 
@@ -358,24 +354,19 @@
             });
         }
         
-        console.log('url je ' + url);
 
         for(let i=0; i<mainNavATags.length;i++){
 
             let elementHref =  mainNavATags[i].getAttribute("href");
             let fileName = elementHref.split("/").pop();
-            console.log(elementHref);
-            console.log('file name je ' + fileName);
 
             if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html'){
 
             }else if(fileName == url.split("/").pop()){
 
-                console.log("radi radi");
                 continue;
             }
 
-            console.log('prosao je apdejt2111');
 
             mainNavATags[i].addEventListener("mouseout", function(){
             mainNavDivTags[i].classList.remove("progress-left-to-right");
@@ -396,8 +387,6 @@
         //---------------------------
 
         if(url=='/WildTrails/index.html'){    
-
-            console.log("GITHUB GITHIB");
 
             let positionTextAbout1;
             let positionTextAbout2;
@@ -632,7 +621,7 @@
             socialMediaIconsAdd(ulForm,arraySocialMediaIcons);
         // formContent();
         }else if(url=='/WildTrails/pages/about.html'){
-            console.log("funkcionise");
+
             displayLocations();
         }else if(url=='/WildTrails/pages/gallery.html'){
             displayGallery();
@@ -701,7 +690,7 @@
 
                 imgSmall.addEventListener("click",function(){
                     let altImg = this.alt;
-                    console.log("saljemo ovo " + altImg);
+
                     showGallerySlider(altImg);
                 });
                 gallery.appendChild(imgSmall);
@@ -759,10 +748,7 @@
             $(this).css('display','none');
         });
 
-        console.log(visibleImg[0]);
-        console.log(typeof(visibleImg));
-        //visibleImg[1].css('opacity', 1)
-           console.log("ne radi kako treba 7778");
+
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
@@ -955,7 +941,7 @@
         countryNames.appendChild(chooseText);
 
         for(let i=0;i<europeanCountries.countries.length;i++){
-            //console.log(europeanCountries.countries[i].name);
+
             let optionTag = document.createElement('option');
             optionTag.value = `${i+1}`;
             optionTag.textContent = `${europeanCountries.countries[i].name}`;
@@ -1427,7 +1413,7 @@
             for(let j=0;j<4;j++){
             let tds = trs[trIndex++].querySelectorAll("td");
 
-                console.log(tds);
+
                 for(let k=0;k<4;k++){
                     tds[k].setAttribute('id',`rss${l++}`);
 
