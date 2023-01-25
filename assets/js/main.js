@@ -715,6 +715,7 @@
             //$('#pic-slider').animate({opacity: 0}, 700);
            // $('#pic-slider').css('display','none');
            $('#pic-slider').css('display','none').animate({opacity: 0}, 700);
+           console.log("ne radi kako treba");
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
