@@ -3027,7 +3027,7 @@ header nav ul a:focus {
 }
 
 #pic-slider {
-  display: none;
+  display: block;
   z-index: 20;
   position: fixed;
   top: 0;

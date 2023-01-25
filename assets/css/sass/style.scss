@@ -2382,7 +2382,7 @@ header{
 
 
 #pic-slider{
-    display: none;
+    display: block;
     z-index: 20;
     position: fixed;
     top: 0;
@@ -2390,6 +2390,8 @@ header{
     left: 0;
     right: 0;
     background-color: #3b3b3b;
+
+    
 }
 
 footer{
