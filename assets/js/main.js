@@ -22,6 +22,31 @@
 
     var arraySecondNavigation = ["s","About","Gallery","Author"];
 
+    organizationLocation = {
+        "locations": [
+          {
+            "country": "Serbia, Belgrade",
+            "address": "Kralja Petra I 56, Belgrade",
+            "phone_number": "+381 11 555-5555"
+          },
+          {
+            "country": "Switzerland, Zürich",
+            "address": "Bahnhofstrasse 1, Zürich",
+            "phone_number": "+41 44 555-5555"
+          },
+          {
+            "country": "France, Paris",
+            "address": "Avenue des Champs-Élysées, Paris",
+            "phone_number": "+33 1 555-5555"
+          },
+          {
+            "country": "Norway, Oslo",
+            "address": "Karl Johans gate 1, Oslo",
+            "phone_number": "+47 23 555-5555"
+          }
+        ]
+    }
+
     europeanCountries = {
         "countries":[
             {

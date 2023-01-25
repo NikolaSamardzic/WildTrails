@@ -2250,6 +2250,7 @@ header{
                             "locations";
 
     justify-content: center;
+    gap: 3rem;
 
     #text-container-location{
         grid-area: heading;
@@ -2267,6 +2268,11 @@ header{
 
     #location-container{
         grid-area: locations;
+
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        gap: 1rem;
     }
 
 
