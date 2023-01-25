@@ -686,6 +686,7 @@
         function displayGallery(){
             let gallery = document.getElementById('img-container');
             let gallerySlider = document.getElementById('pic-slider');
+            gallerySlider.addEventListener("click",hideGallerySlider);
 
             for(let i=0; i<galleryArray.length;i++){
                 let imgSmall = document.createElement('img');
@@ -707,6 +708,12 @@
         function showGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "hidden";
             $('#pic-slider').css('display','block').animate({opacity: 1}, 2000);
+        }
+
+        function hideGallerySlider(){
+            document.getElementById("gallery-body").style.overflowY = "unset";
+            $('#pic-slider').animate({opacity: 0}, 2000);
+            $('#pic-slider').css('display','block')
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
