@@ -699,16 +699,29 @@
                 imgFull.alt = galleryArray[i];
                 imgFull.style.display = 'none';
 
-                imgSmall.addEventListener("click",showGallerySlider);
+                imgSmall.addEventListener("click",function(){
+                    let altImg = this.alt;
+                    console.log(altImg);
+                    showGallerySlider(altImg);
+                });
                 gallery.appendChild(imgSmall);
                 gallerySlider.appendChild(imgFull);
             }
         }
 
-        function showGallerySlider(){
+        function showGallerySlider(altImg){
             document.getElementById("gallery-body").style.overflowY = "hidden";
             $('#pic-slider').css('display','block').animate({opacity: 1}, 500);
             $('#slider-background').css('display','block').animate({opacity: 0.6}, 500);
+
+            let imgTags = document.querySelectorAll("#pic-slider img");
+
+            for(let i=0;i<imgTags.length;i++){
+                if(imgTags[i].alt ==altImg){
+                    imgTags[i].style.display = 'block';
+                    break;
+                }
+            }
         }
 
         function hideGallerySlider(){

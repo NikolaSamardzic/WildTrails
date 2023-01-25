@@ -2402,6 +2402,11 @@ header{
     left: 0;
     right: 0;
     //background-color:  rgba(43, 43, 43, 0.438);
+
+    img{
+        position: relative;
+        z-index: 25;
+    }
     
 }
 
