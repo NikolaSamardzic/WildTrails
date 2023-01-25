@@ -751,7 +751,7 @@
         });
 
 
-           console.log("ne radi kako treba 34342343");
+           console.log("ne radi kako treba 55555");
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
