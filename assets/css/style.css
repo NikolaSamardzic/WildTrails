@@ -2965,7 +2965,7 @@ header nav ul a:focus {
   max-height: -moz-fit-content;
   max-height: fit-content;
   background-color: #576661;
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
