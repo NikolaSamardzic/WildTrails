@@ -2782,8 +2782,8 @@ header nav ul a:focus {
   display: grid;
   -ms-grid-columns: 30rem 30rem;
       grid-template-columns: 30rem 30rem;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "text1 slider";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

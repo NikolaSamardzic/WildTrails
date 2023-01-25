@@ -2198,7 +2198,7 @@ header{
 
     display: grid;
     grid-template-columns: 30rem 30rem;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     grid-template-areas: "text1 slider" ;
     justify-content: space-between;
 
