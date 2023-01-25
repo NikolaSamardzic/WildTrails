@@ -2814,6 +2814,10 @@ header nav ul a:focus {
   grid-area: slider;
 }
 
+#about-us #img-container-about img {
+  width: 100%;
+}
+
 #gallery-body {
   min-height: 100vh;
   max-height: -webkit-fit-content;
