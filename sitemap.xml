@@ -6,31 +6,24 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 	<url>
-		<loc>https://nikolasamardzic.github.io/norway/index.html</loc>
-		<lastmod>2022-7-7</lastmod>
+		<loc>https://nikolasamardzic.github.io/WildTrails/index.html</loc>
+		<lastmod>2022-1-25</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1</priority>
 	</url>
 
 	<url>
-		<loc>https://nikolasamardzic.github.io/norway/what-to-do.html</loc>
-		<lastmod>2022-7-7</lastmod>
+		<loc>https://nikolasamardzic.github.io/WildTrails/pages/about.html</loc>
+		<lastmod>2022-1-25</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.95</priority>
 	</url>
 
 	<url>
-		<loc>https://nikolasamardzic.github.io/norway/book.html</loc>
-		<lastmod>2022-7-7</lastmod>
+		<loc>https://nikolasamardzic.github.io/WildTrails/pages/gallery.html</loc>
+		<lastmod>2022-1-25</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.92</priority>
-	</url>
-
-	<url>
-		<loc>https://nikolasamardzic.github.io/portfolio/index.html</loc>
-		<lastmod>2022-7-7</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.89</priority>
 	</url>
 
 </urlset>

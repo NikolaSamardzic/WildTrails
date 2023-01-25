@@ -10,6 +10,7 @@
     console.log("apdejt broj 4");
 
     var arraySchool = ["Documentation","RSS","Sitemap"];
+    var arraySchoolLinks = ["documentation.pdf","rss.xml","sitemap.xml"];
 
     var arraySocialMedia = ["Facebook","Instagram","Twitter"];
     var arraySocialMediaLinks = ["https://www.facebook.com/","https://www.instagram.com/","https://twitter.com/"];
@@ -614,7 +615,7 @@
         let footerUlSocial = document.getElementById('social-links');
         let footerUlNavigation = document.getElementById('navigation-links');
 
-        navigation(arraySchool,arrayNavigationLinks,footerUlSchool);
+        navigation(arraySchool,arraySchoolLinks,footerUlSchool);
         navigation(arraySocialMedia,arraySocialMediaLinks,footerUlSocial);
         navigation(arrayNavigation,arrayNavigationLinks,footerUlNavigation);
 
