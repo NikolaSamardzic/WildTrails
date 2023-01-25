@@ -3035,7 +3035,7 @@ header nav ul a:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #3b3b3b;
+  background-color: rgba(43, 43, 43, 0.438);
 }
 
 footer {
