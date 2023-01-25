@@ -2207,6 +2207,9 @@ header{
         grid-template-rows: auto auto;
         grid-template-areas:    "text1" 
                                 "slider" ;
+
+        gap: 2rem;
+        justify-content: unset;
     }
 
     #about-text-coontainer{

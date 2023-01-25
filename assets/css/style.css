@@ -2811,6 +2811,10 @@ header nav ul a:focus {
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
         grid-template-areas: "text1"  "slider";
+    gap: 2rem;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
 }
 
