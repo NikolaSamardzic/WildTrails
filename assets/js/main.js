@@ -714,7 +714,7 @@
 
 
             document.getElementById("gallery-body").style.overflowY = "hidden";
-            $('#pic-slider').css('display','block').animate({opacity: 1}, 500);
+            $('#pic-slider').css('display','grid').animate({opacity: 1}, 500);
             $('#slider-background').css('display','block').animate({opacity: 0.7}, 500);
 
             let imgTags = document.querySelectorAll("#pic-slider img");
@@ -740,7 +740,7 @@
             document.getElementById("gallery-body").style.overflowY = "unset";
 
             let visibleImg = $('#pic-slider img').filter(function(){
-                return $(this).css('display') === 'grid';
+                return $(this).css('display') === 'block';
             });
 
             visibleImg.animate({opacity: 0}, 500).promise().then(function(){
