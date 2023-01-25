@@ -696,7 +696,7 @@
 
                 imgFull.src = `../assets/images/full/${galleryArray[i]}.jpg`;
                 imgFull.alt = galleryArray[i];
-                imgFull.display = 'none';
+                imgFull.style.display = 'none';
 
                 imgSmall.addEventListener("click",showGallerySlider);
                 gallery.appendChild(imgSmall);
