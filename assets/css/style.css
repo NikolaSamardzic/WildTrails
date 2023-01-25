@@ -3017,11 +3017,20 @@ header nav ul a:focus {
   border-radius: 3px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 
 #gallery-body #img-container img:hover {
   cursor: pointer;
-  background-color: red;
+}
+
+#gallery-body #img-container img:hover::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #pic-slider {
