@@ -755,10 +755,10 @@
             
         });
 
-        console.log(visibleImg);
+        console.log(visibleImg[0]);
         console.log(typeof(visibleImg));
         //visibleImg.css('opacity', 1)
-           console.log("ne radi kako treba 777");
+           console.log("ne radi kako treba 7778");
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
