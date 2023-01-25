@@ -2352,6 +2352,12 @@ header{
             justify-content: space-evenly;
             gap: 1rem;
         }
+        @include sm{
+            grid-template-columns:auto;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+            justify-content: center;
+            gap: 1rem;
+        }
 
         img{
             width: 250px;
