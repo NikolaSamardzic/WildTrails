@@ -691,7 +691,7 @@
                 let imgSmall = document.createElement('img');
                 let imgFull = document.createElement('img');
 
-                imgSmall.setAttribute('href',`../assets/images/smaller/${galleryArray[i]}`);
+                imgSmall.setAttribute('href',`../assets/images/smaller/${galleryArray[i]}.jpg`);
                 imgSmall.alt = galleryArray[i];
 
                 imgFull.setAttribute('href',`../assets/images/full/${galleryArray[i]}`);
