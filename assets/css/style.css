@@ -3037,6 +3037,10 @@ header nav ul a:focus {
   background-color: #3b3b3b;
 }
 
+#pic-slider img {
+  display: none;
+}
+
 footer {
   margin-top: 5rem;
   background-color: #242424;
