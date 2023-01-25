@@ -2855,9 +2855,8 @@ header nav ul a:focus {
   background-color: #636397;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: max-content;
-      grid-template-columns: -webkit-max-content;
-      grid-template-columns: max-content;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
       grid-template-areas: "heading" "locations";

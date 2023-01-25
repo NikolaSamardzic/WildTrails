@@ -2244,7 +2244,7 @@ header{
     background-color: rgb(99, 99, 151);
 
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-template-areas:    "heading"
                             "locations";
