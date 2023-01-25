@@ -319,6 +319,7 @@
                 //mainNavATags[i].classList.add('active-link');
                 console.log("ovo vrati "+ mainNavATags[i]);
                 //mainNavATags[i].children[1].classList.add('active-link');
+                mainNavDivTags[i].classList.add("active-link");
                 console.log("radi radi");
                 continue;
             }
