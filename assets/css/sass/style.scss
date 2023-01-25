@@ -2208,6 +2208,8 @@ header{
 
     #img-container-about{
         grid-area: slider;
+        display: grid;
+        align-items: center;
 
         img{
             width: 100%;

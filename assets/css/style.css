@@ -2814,6 +2814,11 @@ header nav ul a:focus {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: slider;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about-us #img-container-about img {
