@@ -1686,6 +1686,20 @@ header{
             }
         }
 
+        .button-after{
+            &::after{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: -2rem;
+                content: "Sent!";
+                color: green;
+                font-size: size(size-body);
+                font-weight: 400;
+
+            }
+        }
+
         #div-button{
             margin-top: 2rem;
             display: grid;
@@ -1717,16 +1731,7 @@ header{
                 outline: none;
                 position: relative;
 
-                &::after{
-                    position: absolute;
-                    width: 100%;
-                    top: -2rem;
-                    content: "Sent!";
-                    color: green;
-                    font-size: size(size-body);
-                    font-weight: 400;
 
-                }
 
                 &:hover{
                     cursor: pointer;

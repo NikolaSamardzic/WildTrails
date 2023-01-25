@@ -900,6 +900,15 @@
 
 
         if(!errorNumber){
+
+            let buttonForm = document.getElementById('form-button');
+
+            buttonForm.classList.add('button-after');
+
+            setTimeout(function(){
+                buttonForm.classList.remove('button-after');
+            },2000);
+
             document.getElementById("event-form").reset();
 
             let correctElements = document.querySelectorAll(".correct");

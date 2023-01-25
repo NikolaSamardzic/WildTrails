@@ -2244,6 +2244,17 @@ header nav ul a:focus {
   outline-offset: -2px;
 }
 
+#participation-form form .button-after::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -2rem;
+  content: "Sent!";
+  color: green;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 #participation-form form #div-button {
   margin-top: 2rem;
   display: -ms-grid;
@@ -2283,16 +2294,6 @@ header nav ul a:focus {
   border: none;
   outline: none;
   position: relative;
-}
-
-#participation-form form #div-button button::after {
-  position: absolute;
-  width: 100%;
-  top: -2rem;
-  content: "Sent!";
-  color: green;
-  font-size: 1.25rem;
-  font-weight: 400;
 }
 
 #participation-form form #div-button button:hover {

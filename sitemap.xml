@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    	  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+     	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+	<url>
+		<loc>https://nikolasamardzic.github.io/norway/index.html</loc>
+		<lastmod>2022-7-7</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1</priority>
+	</url>
+
+	<url>
+		<loc>https://nikolasamardzic.github.io/norway/what-to-do.html</loc>
+		<lastmod>2022-7-7</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.95</priority>
+	</url>
+
+	<url>
+		<loc>https://nikolasamardzic.github.io/norway/book.html</loc>
+		<lastmod>2022-7-7</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.92</priority>
+	</url>
+
+	<url>
+		<loc>https://nikolasamardzic.github.io/portfolio/index.html</loc>
+		<lastmod>2022-7-7</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.89</priority>
+	</url>
+
+</urlset>
