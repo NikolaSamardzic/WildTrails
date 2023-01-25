@@ -705,7 +705,7 @@
         }
 
         function showGallerySlider(){
-
+            $('#pic-slider').animate({opacity: 1}, 2000);
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
