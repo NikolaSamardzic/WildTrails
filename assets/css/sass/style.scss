@@ -2277,7 +2277,7 @@ header{
 
         i{
             grid-area: icon1;
-            font-size: 1rem;
+            font-size: 2rem;
             text-align: center;
         }
 
@@ -2299,7 +2299,7 @@ header{
 
         display: grid;
         grid-template-rows: auto auto;
-        grid-template-columns: 15rem 15rem;
+        grid-template-columns: 18rem 18rem;
         gap: 2rem;
         justify-content: space-between;
         
