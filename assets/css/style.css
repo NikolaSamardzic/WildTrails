@@ -2948,6 +2948,10 @@ header nav ul a:focus {
   }
 }
 
+#footer-about {
+  margin-top: 0;
+}
+
 #gallery-body {
   min-height: 100vh;
   max-height: -webkit-fit-content;
@@ -2960,7 +2964,7 @@ footer {
   background-color: #242424;
   height: auto;
   width: 100%;
-  padding-top: 0;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 

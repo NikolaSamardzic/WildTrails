@@ -2315,6 +2315,10 @@ header{
 
 }
 
+#footer-about{
+    margin-top: 0;
+}
+
 //------------GALLERY.HTML-------------------------
 //-------------------------------------------------
 //-------------------------------------------------
@@ -2331,7 +2335,7 @@ footer{
     background-color: $black;
     height: auto;
     width: 100%;
-    padding-top: 0;
+    padding-top: 2rem;
     padding-bottom: 2rem;
 
     nav{
