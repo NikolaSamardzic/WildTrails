@@ -2964,6 +2964,7 @@ header nav ul a:focus {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
+  background-color: #576661;
 }
 
 footer {
