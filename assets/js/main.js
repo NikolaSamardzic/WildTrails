@@ -707,12 +707,12 @@
 
         function showGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "hidden";
-            $('#pic-slider').css('display','block').animate({opacity: 1}, 2000);
+            $('#pic-slider').css('display','block').animate({opacity: 1}, 1000);
         }
 
         function hideGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "unset";
-            $('#pic-slider').animate({opacity: 0}, 2000);
+            $('#pic-slider').animate({opacity: 0}, 1000);
             $('#pic-slider').css('display','block')
         }
 
