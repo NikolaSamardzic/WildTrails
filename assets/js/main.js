@@ -755,9 +755,13 @@
             
         });
 
+        visibleImg.animate({opacity: 1}, 0).promise().then(function(){
+            $(this).css('display','none');
+        });
+
         console.log(visibleImg[0]);
         console.log(typeof(visibleImg));
-        visibleImg[1].css('opacity', 1)
+        //visibleImg[1].css('opacity', 1)
            console.log("ne radi kako treba 7778");
         }
 
