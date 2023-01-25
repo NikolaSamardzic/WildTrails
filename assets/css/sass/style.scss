@@ -2336,11 +2336,14 @@ header{
         padding-top: 5rem;
 
         display: grid;
-        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto;
         justify-content: space-between;
         gap: 5rem;
 
+        img{
+            width: 200px;
+        }
     }
 
 }
