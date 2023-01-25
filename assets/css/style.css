@@ -2965,6 +2965,16 @@ header nav ul a:focus {
   max-height: -moz-fit-content;
   max-height: fit-content;
   background-color: #576661;
+  padding-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px 250px;
+  -ms-grid-rows: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {

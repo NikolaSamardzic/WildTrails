@@ -2332,6 +2332,14 @@ header{
         min-height: 100vh;
         max-height: fit-content;
         background-color: rgb(87, 102, 97);
+
+        padding-top: 5rem;
+
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 100px 100px 100px;
+        justify-content: space-between;
+
     }
 
 }
