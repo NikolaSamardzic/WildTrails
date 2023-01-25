@@ -701,7 +701,7 @@
 
                 imgSmall.addEventListener("click",function(){
                     let altImg = this.alt;
-                    console.log(altImg);
+                    console.log("saljemo ovo " + altImg);
                     showGallerySlider(altImg);
                 });
                 gallery.appendChild(imgSmall);
@@ -720,7 +720,7 @@
             let imgTags = document.querySelectorAll("#pic-slider img");
 
             for(let i=0;i<imgTags.length;i++){
-                if(imgTags[i].alt ==altImg){
+                if(imgTags[i].alt == altImg){
                     imgTags[i].style.display = 'block';
                     break;
                 }
