@@ -2925,10 +2925,10 @@ header nav ul a:focus {
   grid-area: locations;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10rem 10rem;
-      grid-template-rows: 10rem 10rem;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: 10rem 10rem;
+      grid-template-columns: 10rem 10rem;
   gap: 2rem;
 }
 
