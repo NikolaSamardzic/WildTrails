@@ -2993,6 +2993,9 @@ header nav ul a:focus {
         grid-template-columns: auto  auto;
     -ms-grid-rows: auto auto auto auto auto auto;
         grid-template-rows: auto auto auto auto auto auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
