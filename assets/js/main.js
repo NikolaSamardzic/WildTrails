@@ -755,8 +755,8 @@
             
         });
 
-            visibleImg.style.opacity = "1";
-           console.log("ne radi kako treba 55555");
+        visibleImg.css('opacity', 1)
+           console.log("ne radi kako treba 4444");
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
