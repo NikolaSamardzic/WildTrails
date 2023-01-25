@@ -707,14 +707,14 @@
 
         function showGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "hidden";
-            $('#pic-slider').css('display','block').animate({opacity: 0.6}, 700);
+            $('#pic-slider').css('display','block').animate({opacity: 0.6}, 500);
         }
 
         function hideGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "unset";
             //$('#pic-slider').animate({opacity: 0}, 700);
            // $('#pic-slider').css('display','none');
-           $('#pic-slider').animate({opacity: 0}, 2000).promise().then(function(){
+           $('#pic-slider').animate({opacity: 0}, 500).promise().then(function(){
             $(this).css('display','none');
         });
            console.log("ne radi kako treba 3");
