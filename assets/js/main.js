@@ -666,10 +666,15 @@
                 let phone = document.createElement('p');
                 phone.textContent = organizationLocation.locations[i].phone_number;
 
-                divContainer.appendChild(pointerLocation);
-                divContainer.appendChild(locationHeadig);
-                divContainer.appendChild(address);
-                divContainer.appendChild(phone);
+                let innerDiv = document.createElement('div');
+
+                innerDiv.appendChild(pointerLocation);
+                innerDiv.appendChild(locationHeadig);
+                innerDiv.appendChild(address);
+                innerDiv.appendChild(phone);
+
+                innerDiv.classList.add('inner-container-location');
+                divContainer.appendChild(innerDiv);
             }
         }
 
