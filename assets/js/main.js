@@ -691,10 +691,10 @@
                 let imgSmall = document.createElement('img');
                 let imgFull = document.createElement('img');
 
-                imgSmall.setAttribute('href',`assets/images/smaller/${galleryArray[i]}.jpg`);
+                imgSmall.setAttribute('href',`../assets/images/smaller/${galleryArray[i]}.jpg`);
                 imgSmall.alt = galleryArray[i];
 
-                imgFull.setAttribute('href',`assets/images/full/${galleryArray[i]}.jpg`);
+                imgFull.setAttribute('href',`../assets/images/full/${galleryArray[i]}.jpg`);
                 imgFull.alt = galleryArray[i];
 
 
