@@ -629,6 +629,9 @@
             navigation(arraySocialMedia,arraySocialMediaLinks,ulForm);
             socialMediaIconsAdd(ulForm,arraySocialMediaIcons);
         // formContent();
+        }else if(url=='/WildTrails/pages/about.html'){
+            console.log("funkcionise");
+
         }
 
         //------ END INDEX.HTML ---------
@@ -1386,6 +1389,8 @@
         }
 
     }
+
+
 
     function setActiveSecondNav(liContainer){
 
