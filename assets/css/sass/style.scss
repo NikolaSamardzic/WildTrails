@@ -2181,11 +2181,13 @@ footer{
             grid-template-columns: max-content;
             justify-content: unset;
             gap: 1rem;
-
+            justify-content: center;
 
             li{
                 
-                justify-self: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
