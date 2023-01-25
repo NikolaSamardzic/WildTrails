@@ -2174,6 +2174,12 @@ header{
 }
 
 #about-us{
+
+    h1{
+        font-size: size(size-h1);
+        color: $black;
+    }
+
     margin-top: 5rem;
     height: 40rem;
     background-color: red;
