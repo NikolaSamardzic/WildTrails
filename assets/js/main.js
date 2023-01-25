@@ -631,7 +631,7 @@
         // formContent();
         }else if(url=='/WildTrails/pages/about.html'){
             console.log("funkcionise");
-
+            displayLocations();
         }
 
         //------ END INDEX.HTML ---------
@@ -648,6 +648,31 @@
         navigation(arrayNavigation,arrayNavigationLinks,footerUlNavigation);
 
         // END FOOTER
+
+        function displayLocations(){
+            let divContainer = document.getElementById('location-container');
+
+            for(let i=0;i<organizationLocation.locations.length;i++){
+                let pointerLocation = document.createElement('i');
+                pointerLocation.classList.add("fa-solid");
+                pointerLocation.classList.add("fa-location-dot");
+
+                let locationHeadig = document.createElement('h4');
+                locationHeadig.textContent = organizationLocation.locations[i].country;
+
+                let address = document.createElement('p');
+                address.textContent = organizationLocation.locations[i].address;
+
+                let phone = document.createElement('p');
+                phone.textContent = organizationLocation.locations[i].phone_number;
+
+                divContainer.appendChild(pointerLocation);
+                divContainer.appendChild(locationHeadig);
+                divContainer.appendChild(address);
+                divContainer.appendChild(phone);
+            }
+        }
+
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
             let links = ulElement.getElementsByTagName('a');
 
@@ -823,6 +848,7 @@
             });
         }
 
+        
     
 
     }
