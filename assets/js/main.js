@@ -10,7 +10,7 @@
     console.log("apdejt broj 4");
 
     var arraySchool = ["Documentation","RSS","Sitemap"];
-    var arraySchoolLinks = ["documentation.pdf","https://nikolasamardzic.github.io/WildTrails/rss.xml","https://nikolasamardzic.github.io/WildTrails/sitemap.xml"];
+    var arraySchoolLinks = ["https://nikolasamardzic.github.io/WildTrails/documentation.pdf","https://nikolasamardzic.github.io/WildTrails/rss.xml","https://nikolasamardzic.github.io/WildTrails/sitemap.xml"];
 
     var arraySocialMedia = ["Facebook","Instagram","Twitter"];
     var arraySocialMediaLinks = ["https://www.facebook.com/","https://www.instagram.com/","https://twitter.com/"];
