@@ -2784,7 +2784,7 @@ header nav ul a:focus {
       grid-template-columns: 30rem 30rem;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "text slider";
+      grid-template-areas: "text1 slider";
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2799,6 +2799,19 @@ header nav ul a:focus {
 #about-us p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
+  color: #242424;
+}
+
+#about-us #about-text-coontainer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text1;
+}
+
+#about-us #img-container-about {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: slider;
 }
 
 #gallery-body {

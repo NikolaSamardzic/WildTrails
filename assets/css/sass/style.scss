@@ -2175,6 +2175,8 @@ header{
 
 #about-us{
 
+
+
     h1{
         font-size: size(size-h1);
         color: $black;
@@ -2185,6 +2187,7 @@ header{
     p{
         font-size: size(size-body);
         margin-bottom: 1rem;
+        color: $black;
     }
 
     margin-top: 5rem;
@@ -2194,8 +2197,16 @@ header{
     display: grid;
     grid-template-columns: 30rem 30rem;
     grid-template-rows: 1fr;
-    grid-template-areas: "text slider" ;
+    grid-template-areas: "text1 slider" ;
     justify-content: space-between;
+
+    #about-text-coontainer{
+        grid-area: text1;
+    }
+
+    #img-container-about{
+        grid-area: slider;
+    }
 }
 
 //------------GALLERY.HTML-------------------------
