@@ -2975,6 +2975,7 @@ header nav ul a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 5rem;
 }
 
 footer {
