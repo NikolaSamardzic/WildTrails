@@ -714,7 +714,7 @@
             document.getElementById("gallery-body").style.overflowY = "unset";
             //$('#pic-slider').animate({opacity: 0}, 700);
            // $('#pic-slider').css('display','none');
-           $('#pic-slider').css('display','none').animate({opacity: 0}, 700);
+           $('#pic-slider').animate({opacity: 0}, 700).css('display','none');
            console.log("ne radi kako treba");
         }
 
