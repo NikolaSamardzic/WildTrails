@@ -714,8 +714,8 @@
             document.getElementById("gallery-body").style.overflowY = "unset";
             //$('#pic-slider').animate({opacity: 0}, 700);
            // $('#pic-slider').css('display','none');
-           $('#pic-slider').animate({opacity: 0}, 700).css('display','none');
-           console.log("ne radi kako treba 23232");
+           $('#pic-slider').animate({opacity: 0}, 700);
+           console.log("ne radi kako treba 3");
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
