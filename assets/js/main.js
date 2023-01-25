@@ -1305,10 +1305,10 @@
                     divTag.appendChild(distancePTag);
                     tds[k].appendChild(divTag); 
 
-                    let button = document.createElement("button");
-                    button.type = "button";
-                    button.innerText = "Join";
-                    tds[k].appendChild(button);
+                    let link = document.createElement("a");
+                    link.href = url + "#participation-form-part";
+                    link.innerText = "Join";
+                    tds[k].appendChild(link);
                 }
 
             }
