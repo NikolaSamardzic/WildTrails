@@ -2965,7 +2965,7 @@ header nav ul a:focus {
   max-height: -moz-fit-content;
   max-height: fit-content;
   background-color: #576661;
-  padding-top: 4rem;
+  padding-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
@@ -2975,7 +2975,7 @@ header nav ul a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 #gallery-body #img-container img {
