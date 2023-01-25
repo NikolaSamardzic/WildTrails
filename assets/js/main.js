@@ -316,7 +316,8 @@
             if(elementHref == 'https://nikolasamardzic.github.io/portfolio/index.html'){
                 
             }else if(fileName == url.split("/").pop()){
-                mainNavATags[i].classList.add('active-link');
+                //mainNavATags[i].classList.add('active-link');
+                mainNavATags[i].children[1].classList.add('active-link');
                 console.log("radi radi");
                 continue;
             }
