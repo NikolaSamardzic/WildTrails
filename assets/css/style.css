@@ -3047,8 +3047,6 @@ header nav ul a:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: auto;
