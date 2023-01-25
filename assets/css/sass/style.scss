@@ -2173,6 +2173,10 @@ header{
 
 }
 
+#footer-about{
+    position: sticky;
+    bottom: 0;
+}
 
 
 //------------GALLERY.HTML-------------------------
@@ -2183,6 +2187,12 @@ header{
     min-height: 100vh;
     max-height: fit-content;
 
+}
+
+
+#footer-gallery{
+    position: sticky;
+    bottom: 0;
 }
 
 footer{
