@@ -317,7 +317,8 @@
                 
             }else if(fileName == url.split("/").pop()){
                 //mainNavATags[i].classList.add('active-link');
-                mainNavATags[i].children[1].classList.add('active-link');
+                console.log("ovo vrati "+ mainNavATags[i].children[1]);
+                //mainNavATags[i].children[1].classList.add('active-link');
                 console.log("radi radi");
                 continue;
             }
