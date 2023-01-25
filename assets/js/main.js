@@ -726,8 +726,14 @@
 
         function hideGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "unset";
-            //$('#pic-slider').animate({opacity: 0}, 700);
-           // $('#pic-slider').css('display','none');
+
+            let visibleImg = $('#pic-slider img').filter(function(){
+                return $(this).css('display') === 'block';
+            });
+
+            visibleImg.animate({opacity: 0}, 500).promise().then(function(){
+                $(this).css('display','none');
+            });
            $('#pic-slider').animate({opacity: 0}, 500).promise().then(function(){
             $(this).css('display','none');
             
@@ -736,6 +742,8 @@
             $(this).css('display','none');
             
         });
+
+
            console.log("ne radi kako treba 3333");
         }
 
