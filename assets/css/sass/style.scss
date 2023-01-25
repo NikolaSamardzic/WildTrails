@@ -2175,6 +2175,20 @@ footer{
         grid-template-columns: max-content max-content max-content;
         justify-content: space-between;
 
+
+        @include xsm{
+            grid-template-rows: auto auto auto;
+            grid-template-columns: max-content;
+            justify-content: unset;
+            gap: 1rem;
+
+
+            li{
+                
+                justify-self: center;
+            }
+        }
+
         li{
             margin-bottom: 0.5rem;
         }

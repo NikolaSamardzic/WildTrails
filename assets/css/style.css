@@ -2789,6 +2789,24 @@ footer nav {
           justify-content: space-between;
 }
 
+@media (max-width: 420px) {
+  footer nav {
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    -ms-grid-columns: max-content;
+        grid-template-columns: -webkit-max-content;
+        grid-template-columns: max-content;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    gap: 1rem;
+  }
+  footer nav li {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
 footer nav li {
   margin-bottom: 0.5rem;
 }
