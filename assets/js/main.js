@@ -9,7 +9,7 @@
 
     console.log("apdejt broj 4");
 
-    var galleryArray = ['couple-together-kayaking-river.jpg','couple-together-kayaking','cyclist-sunny-day-bike-adventure-travel-photo','friends-are-resting-after-they-got-mountain','hiker-looking-river','hikers-top','long-shot-man-mountain-biking-equipment','man-mountain-biking-equipment-outdoors','man-riding-mountain-bike-special-equipment-with-copy-space','silhouette-teamwork-helping-hand','smiling-young-man-paddling-kayak-with-his-friend-lake','woman-holding-paddle-kayak-river'];
+    var galleryArray = ['couple-together-kayaking-river','couple-together-kayaking','cyclist-sunny-day-bike-adventure-travel-photo','friends-are-resting-after-they-got-mountain','hiker-looking-river','hikers-top','long-shot-man-mountain-biking-equipment','man-mountain-biking-equipment-outdoors','man-riding-mountain-bike-special-equipment-with-copy-space','silhouette-teamwork-helping-hand','smiling-young-man-paddling-kayak-with-his-friend-lake','woman-holding-paddle-kayak-river'];
 
     var arraySchool = ["Documentation","RSS","Sitemap"];
     var arraySchoolLinks = ["https://nikolasamardzic.github.io/WildTrails/documentation.pdf","https://nikolasamardzic.github.io/WildTrails/rss.xml","https://nikolasamardzic.github.io/WildTrails/sitemap.xml"];
