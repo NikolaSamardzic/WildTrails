@@ -757,7 +757,7 @@
 
         console.log(visibleImg[0]);
         console.log(typeof(visibleImg));
-        //visibleImg.css('opacity', 1)
+        visibleImg[1].css('opacity', 1)
            console.log("ne radi kako treba 7778");
         }
 
