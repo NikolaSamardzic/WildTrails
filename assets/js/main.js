@@ -696,11 +696,16 @@
 
                 imgFull.src = `../assets/images/full/${galleryArray[i]}.jpg`;
                 imgFull.alt = galleryArray[i];
+                imgFull.display = 'none';
 
-
+                imgSmall.addEventListener("click",showGallerySlider);
                 gallery.appendChild(imgSmall);
                 gallerySlider.appendChild(imgFull);
             }
+        }
+
+        function showGallerySlider(){
+
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
