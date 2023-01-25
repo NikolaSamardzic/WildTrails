@@ -1909,17 +1909,25 @@ header nav ul a:focus {
 }
 
 #events td a {
-  -ms-grid-column-align: auto;
-      justify-self: auto;
-  display: block;
+  justify-self: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: eventButton;
   width: 4.5rem;
   height: 2rem;
   font-size: 1.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #242424;
   color: #E7E7E7;
+  border-radius: 3px;
 }
 
 #events td a:hover {

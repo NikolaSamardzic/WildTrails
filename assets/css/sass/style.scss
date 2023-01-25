@@ -1397,14 +1397,19 @@ header{
 
         a{
             justify-self: auto;
-            display: block;
+            display: flex;
             grid-area: eventButton;
             width: 4.5rem;
             height: 2rem;
             font-size: 1.3rem;
 
+            justify-content: center;
+            align-items: center;
+
             background-color: $black;
             color: $white;
+
+            border-radius: 3px;
 
             &:hover{
                 color: white;
