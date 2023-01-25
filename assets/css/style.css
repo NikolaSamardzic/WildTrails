@@ -2980,6 +2980,9 @@ header nav ul a:focus {
 
 #gallery-body #img-container img {
   width: 250px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #pic-slider {
