@@ -2202,6 +2202,13 @@ header{
     grid-template-areas: "text1 slider" ;
     justify-content: space-between;
 
+    @include lg{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:    "text1" 
+                                "slider" ;
+    }
+
     #about-text-coontainer{
         grid-area: text1;
     }
