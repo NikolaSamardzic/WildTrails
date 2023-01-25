@@ -2767,6 +2767,20 @@ header nav ul a:focus {
   grid-area: input2;
 }
 
+#about-body {
+  min-height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+#gallery-body {
+  min-height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
 footer {
   margin-top: 5rem;
   background-color: #242424;
