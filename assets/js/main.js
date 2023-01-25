@@ -715,7 +715,7 @@
 
             document.getElementById("gallery-body").style.overflowY = "hidden";
             $('#pic-slider').css('display','block').animate({opacity: 1}, 500);
-            $('#slider-background').css('display','block').animate({opacity: 0.6}, 500);
+            $('#slider-background').css('display','block').animate({opacity: 0.7}, 500);
 
             let imgTags = document.querySelectorAll("#pic-slider img");
 
