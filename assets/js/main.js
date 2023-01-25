@@ -1275,15 +1275,13 @@
 
 
 
-        for(let i=0,k=0;i<3;i++){
+        for(let i=0;i<3;i++){
             let events = activities[i].events;
 
             for(let j=0;j<4;j++){
             let tds = trs[trIndex++].querySelectorAll("td");
 
-            tds[k].setAttribute("id",`RSS${k}`);
-            k++;
-
+                console.log(tds);
                 for(let k=0;k<4;k++){
    
 
