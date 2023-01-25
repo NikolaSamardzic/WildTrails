@@ -723,7 +723,7 @@
             $(this).css('display','none');
             
         });
-           console.log("ne radi kako treba 3");
+           console.log("ne radi kako treba 3333");
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
