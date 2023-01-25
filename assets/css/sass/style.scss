@@ -2251,6 +2251,16 @@ header{
 
     #text-container-location{
         grid-area: heading;
+
+        h2{
+            text-align: center;
+            font-size: size(size-h2);
+        }
+
+        p{
+            text-align: center;
+            font-size: size(size-body);
+        }
     }
 
     #location-container{
