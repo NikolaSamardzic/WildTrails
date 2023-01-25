@@ -1380,6 +1380,7 @@
 
                     let image = document.createElement("img");
                     image.src="assets/images/events/" + events[k].img;
+                    image.alt = events[k].heading;
                     tds[k].appendChild(image); 
 
                     let eventTag = document.createElement("p");
