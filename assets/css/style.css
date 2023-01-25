@@ -2960,7 +2960,7 @@ footer {
   background-color: #242424;
   height: auto;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 0;
   padding-bottom: 2rem;
 }
 
