@@ -2970,8 +2970,8 @@ header nav ul a:focus {
   display: grid;
   -ms-grid-columns: 250px 250px 250px 250px;
       grid-template-columns: 250px 250px 250px 250px;
-  -ms-grid-rows: 100px 100px 100px;
-      grid-template-rows: 100px 100px 100px;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
