@@ -1909,7 +1909,7 @@ header nav ul a:focus {
   color: #242424;
 }
 
-#events td button {
+#events td a {
   -ms-grid-column-align: auto;
       justify-self: auto;
   display: block;
@@ -1922,7 +1922,7 @@ header nav ul a:focus {
 }
 
 @media (max-width: 768px) {
-  #events td button {
+  #events td a {
     -ms-grid-column-align: center;
         justify-self: center;
   }
