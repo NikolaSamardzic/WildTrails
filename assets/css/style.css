@@ -2794,6 +2794,7 @@ header nav ul a:focus {
   font-size: 2.5rem;
   color: #242424;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 #about-us p {
