@@ -705,6 +705,7 @@
         }
 
         function showGallerySlider(){
+            document.getElementById("gallery-body").style.overflowY = "hidden";
             $('#pic-slider').animate({opacity: 1}, 2000);
         }
 
