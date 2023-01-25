@@ -740,7 +740,7 @@
             document.getElementById("gallery-body").style.overflowY = "unset";
 
             let visibleImg = $('#pic-slider img').filter(function(){
-                return $(this).css('display') === 'block';
+                return $(this).css('display') === 'grid';
             });
 
             visibleImg.animate({opacity: 0}, 500).promise().then(function(){
