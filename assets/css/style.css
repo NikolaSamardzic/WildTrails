@@ -2777,7 +2777,6 @@ header nav ul a:focus {
 #about-us {
   margin-top: 5rem;
   height: auto;
-  background-color: red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30rem 30rem;
