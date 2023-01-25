@@ -2900,6 +2900,7 @@ header nav ul a:focus {
   -ms-grid-column: 1;
   grid-area: icon1;
   font-size: 1rem;
+  text-align: center;
 }
 
 #location .inner-container-location h4 {
