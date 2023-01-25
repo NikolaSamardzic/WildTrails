@@ -2296,9 +2296,9 @@ header{
         grid-area: locations;
 
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: 10rem 10rem;
         grid-template-columns: auto auto;
-        gap: 1rem;
+        gap: 2rem;
     }
 
 
