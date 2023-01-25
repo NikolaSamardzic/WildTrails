@@ -2839,6 +2839,12 @@ header nav ul a:focus {
   width: 100%;
 }
 
+#location {
+  height: 30rem;
+  margin-top: 3rem;
+  background-color: blue;
+}
+
 #gallery-body {
   min-height: 100vh;
   max-height: -webkit-fit-content;
