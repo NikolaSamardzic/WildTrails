@@ -2774,6 +2774,11 @@ header nav ul a:focus {
   max-height: fit-content;
 }
 
+#about-us {
+  height: 40rem;
+  background-color: red;
+}
+
 #gallery-body {
   min-height: 100vh;
   max-height: -webkit-fit-content;
