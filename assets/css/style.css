@@ -2793,6 +2793,12 @@ header nav ul a:focus {
 #about-us h1 {
   font-size: 2.5rem;
   color: #242424;
+  margin-bottom: 3rem;
+}
+
+#about-us p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 #gallery-body {

@@ -2178,6 +2178,13 @@ header{
     h1{
         font-size: size(size-h1);
         color: $black;
+
+        margin-bottom: 3rem;
+    }
+
+    p{
+        font-size: size(size-body);
+        margin-bottom: 1rem;
     }
 
     margin-top: 5rem;
