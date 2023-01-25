@@ -711,13 +711,7 @@
 
         function showGallerySlider(altImg){
 
-            let imgTagsRemove = $('#pic-slider img');
-            for(let i=0;i<imgTagsRemove.length;i++){
 
-                if(imgTagsRemove[i].css('display') == 'block'){
-                    imgTagsRemove[i].css('display','none');
-                }
-            }
 
             document.getElementById("gallery-body").style.overflowY = "hidden";
             $('#pic-slider').css('display','block').animate({opacity: 1}, 500);
@@ -734,6 +728,15 @@
         }
 
         function hideGallerySlider(){
+
+         /*   let imgTagsRemove = $('#pic-slider img');
+            for(let i=0;i<imgTagsRemove.length;i++){
+
+                if(imgTagsRemove[i].css('display') == 'block'){
+                    imgTagsRemove[i].css('display','none');
+                }
+            }*/
+
             document.getElementById("gallery-body").style.overflowY = "unset";
 
             let visibleImg = $('#pic-slider img').filter(function(){
