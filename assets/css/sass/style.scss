@@ -2175,7 +2175,9 @@ header{
 
 #about-us{
 
-
+    #wide-pic{
+        display: none;
+    }
 
     h1{
         font-size: size(size-h1);
@@ -2210,6 +2212,14 @@ header{
 
         gap: 2rem;
         justify-content: unset;
+
+        #wide-pic{
+            display: block;
+        }
+
+        #thin-pic{
+            display: none;
+        }
     }
 
     #about-text-coontainer{

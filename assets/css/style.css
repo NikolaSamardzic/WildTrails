@@ -2790,6 +2790,10 @@ header nav ul a:focus {
           justify-content: space-between;
 }
 
+#about-us #wide-pic {
+  display: none;
+}
+
 #about-us h1 {
   font-size: 2.5rem;
   color: #242424;
@@ -2815,6 +2819,12 @@ header nav ul a:focus {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+  }
+  #about-us #wide-pic {
+    display: block;
+  }
+  #about-us #thin-pic {
+    display: none;
   }
 }
 
