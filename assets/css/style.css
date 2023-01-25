@@ -3022,6 +3022,7 @@ header nav ul a:focus {
 
 #gallery-body #img-container img:hover {
   cursor: pointer;
+  background-color: red;
 }
 
 #pic-slider {
