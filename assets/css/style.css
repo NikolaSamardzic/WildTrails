@@ -1919,6 +1919,13 @@ header nav ul a:focus {
   width: 4.5rem;
   height: 2rem;
   font-size: 1.3rem;
+  background-color: #242424;
+  color: #E7E7E7;
+}
+
+#events td a:hover {
+  color: white;
+  background-color: black;
 }
 
 @media (max-width: 768px) {

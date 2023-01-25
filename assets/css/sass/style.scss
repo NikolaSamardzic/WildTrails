@@ -1403,6 +1403,14 @@ header{
             height: 2rem;
             font-size: 1.3rem;
 
+            background-color: $black;
+            color: $white;
+
+            &:hover{
+                color: white;
+                background-color: black;
+            }
+
             @include md{
                 justify-self: center;
             }
