@@ -2949,7 +2949,7 @@ header nav ul a:focus {
 }
 
 #footer-about {
-  margin-top: 0;
+  margin-top: -10px;
 }
 
 #gallery-body {
