@@ -2996,6 +2996,7 @@ header nav ul a:focus {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    gap: 1rem;
   }
 }
 
