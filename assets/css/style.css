@@ -2957,6 +2957,8 @@ header nav ul a:focus {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
+  position: relative;
+  z-index: 10;
 }
 
 #gallery-body #img-container {
@@ -3025,7 +3027,8 @@ header nav ul a:focus {
 }
 
 #pic-slider {
-  display: block;
+  display: none;
+  z-index: 20;
   position: fixed;
   top: 0;
   bottom: 0;

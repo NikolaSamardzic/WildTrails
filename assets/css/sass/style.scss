@@ -2326,6 +2326,8 @@ header{
 #gallery-body{
     min-height: 100vh;
     max-height: fit-content;
+    position: relative;
+    z-index: 10;
 
 
     #img-container{
@@ -2377,8 +2379,11 @@ header{
 
 }
 
+
+
 #pic-slider{
-    display: block;
+    display: none;
+    z-index: 20;
     position: fixed;
     top: 0;
     bottom: 0;
