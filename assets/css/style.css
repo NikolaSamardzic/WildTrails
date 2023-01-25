@@ -2777,6 +2777,16 @@ header nav ul a:focus {
 #about-us {
   height: 40rem;
   background-color: red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30rem 30rem;
+      grid-template-columns: 30rem 30rem;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "text slider";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #gallery-body {

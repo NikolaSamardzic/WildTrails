@@ -2176,6 +2176,12 @@ header{
 #about-us{
     height: 40rem;
     background-color: red;
+
+    display: grid;
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text slider" ;
+    justify-content: space-between;
 }
 
 //------------GALLERY.HTML-------------------------
