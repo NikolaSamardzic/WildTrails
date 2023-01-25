@@ -1275,7 +1275,7 @@
 
 
 
-        for(let i=0;i<3;i++){
+        for(let i=0,l=0;i<3;i++){
             let events = activities[i].events;
 
             for(let j=0;j<4;j++){
@@ -1283,7 +1283,7 @@
 
                 console.log(tds);
                 for(let k=0;k<4;k++){
-   
+                    tds[k].setAttribute('id',`rss${l++}`);
 
                     let heading = document.createElement("h1");
                     heading.innerText = events[k].heading;
@@ -1323,9 +1323,9 @@
                     link.innerText = "Join";
                     tds[k].appendChild(link);
                 }
-
+                l-=4;
             }
-
+            l+=4;
         }
 
 
