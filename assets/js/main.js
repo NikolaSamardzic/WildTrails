@@ -707,13 +707,13 @@
 
         function showGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "hidden";
-            $('#pic-slider').css('display','block').animate({opacity: 1}, 1000);
+            $('#pic-slider').css('display','block').animate({opacity: 0.6}, 700);
         }
 
         function hideGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "unset";
-            $('#pic-slider').animate({opacity: 0}, 1000);
-            $('#pic-slider').css('display','block')
+            $('#pic-slider').animate({opacity: 0}, 700);
+            $('#pic-slider').css('display','none');
         }
 
         function socialMediaIconsAdd(ulElement,arraySocialMediaIcons){
