@@ -2298,7 +2298,9 @@ header{
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: 10rem 10rem;
-        gap: 2rem;
+        //gap: 2rem;
+        justify-content: space-between;
+        
     }
 
 
