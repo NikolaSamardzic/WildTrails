@@ -2800,6 +2800,7 @@ header nav ul a:focus {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: #242424;
+  text-align: justify;
 }
 
 #about-us #about-text-coontainer {
