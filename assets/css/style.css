@@ -2937,6 +2937,18 @@ header nav ul a:focus {
           justify-content: space-between;
 }
 
+@media (max-width: 650px) {
+  #location #location-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+
 #gallery-body {
   min-height: 100vh;
   max-height: -webkit-fit-content;
