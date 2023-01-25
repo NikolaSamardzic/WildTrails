@@ -2404,10 +2404,15 @@ header{
     //background-color:  rgba(43, 43, 43, 0.438);
 
     display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     justify-content: center;
     align-items: center;
 
+    grid-template-areas: "img-full";
+
     img{
+        grid-area: img-full;
         position: relative;
         z-index: 25;
     }
