@@ -707,7 +707,8 @@
 
         function showGallerySlider(){
             document.getElementById("gallery-body").style.overflowY = "hidden";
-            $('#pic-slider').css('display','block').animate({opacity: 0.6}, 500);
+            $('#pic-slider').css('display','block').animate({opacity: 1}, 500);
+            $('#slider-background').css('display','block').animate({opacity: 0.6}, 500);
         }
 
         function hideGallerySlider(){
@@ -716,6 +717,11 @@
            // $('#pic-slider').css('display','none');
            $('#pic-slider').animate({opacity: 0}, 500).promise().then(function(){
             $(this).css('display','none');
+            
+        });
+        $('#slider-background').animate({opacity: 0}, 500).promise().then(function(){
+            $(this).css('display','none');
+            
         });
            console.log("ne radi kako treba 3");
         }

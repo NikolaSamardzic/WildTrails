@@ -3026,6 +3026,18 @@ header nav ul a:focus {
   cursor: pointer;
 }
 
+#slider-background {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  z-index: 19;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(43, 43, 43, 0.438);
+}
+
 #pic-slider {
   opacity: 0;
   display: none;
@@ -3035,7 +3047,6 @@ header nav ul a:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(43, 43, 43, 0.438);
 }
 
 footer {
