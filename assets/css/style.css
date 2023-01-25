@@ -2978,6 +2978,10 @@ header nav ul a:focus {
   gap: 5rem;
 }
 
+#pic-slider {
+  display: none;
+}
+
 footer {
   margin-top: 5rem;
   background-color: #242424;
