@@ -26,4 +26,11 @@
 		<priority>0.92</priority>
 	</url>
 
+		<url>
+		<loc>https://nikolasamardzic.github.io/WildTrails/pages/author.html</loc>
+		<lastmod>2022-1-25</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>0.91</priority>
+	</url>
+
 </urlset>
