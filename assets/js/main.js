@@ -18,7 +18,7 @@
 
     var arrayNavigation = ["Home","About","Gallery","Author"];
 
-    var arrayNavigationLinks = [`${prefixOnline}index.html`,`https://nikolasamardzic.github.io/WildTrails/pages/about.html`,`https://nikolasamardzic.github.io/WildTrails/pages/gallery.html`,`https://nikolasamardzic.github.io/portfolio/index.html`];
+    var arrayNavigationLinks = [`${prefixOnline}index.html`,`https://nikolasamardzic.github.io/WildTrails/pages/about.html`,`https://nikolasamardzic.github.io/WildTrails/pages/gallery.html`,`https://nikolasamardzic.github.io/WildTrails/pages/author.html`];
 
     var arraySecondNavigation = ["s","About","Gallery","Author"];
 
